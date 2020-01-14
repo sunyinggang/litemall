@@ -28,6 +28,8 @@
 
       <el-table-column align="center" label="时间" prop="addTime"/>
 
+      <el-table-column align="center" label="商家回复内容" prop="adminContent"/>
+
       <el-table-column align="center" label="操作" width="200" class-name="small-padding fixed-width">
         <template slot-scope="scope">
           <el-button type="primary" size="mini" @click="handleReply(scope.row)">回复</el-button>

@@ -20,9 +20,9 @@ router.beforeEach((to, from, next) => {
   NProgress.start() // start progress bar
   if (getToken()) { // determine if there has token
     /* has token*/
-    if (to.path === '/login') {
+    if (to.path === '/login') { // 如果是进入登录页面 则不需要权限 直接进入
       next({ path: '/' })
-      NProgress.done() // if current page is dashboard will not trigger	afterEach hook, so manually handle it
+      NProgress.done() // // 页面导航结束
     } else {
       if (store.getters.perms.length === 0) { // 判断当前用户是否已拉取完user_info信息
         store.dispatch('GetUserInfo').then(res => { // 拉取user_info
@@ -38,13 +38,7 @@ router.beforeEach((to, from, next) => {
           })
         })
       } else {
-        // 没有动态改变权限的需求可直接next() 删除下方权限判断 ↓
-        if (hasPermission(store.getters.perms, to.meta.perms)) {
-          next()
-        } else {
-          next({ path: '/401', replace: true, query: { noGoBack: true }})
-        }
-        // 可删 ↑
+        next()
       }
     }
   } else {

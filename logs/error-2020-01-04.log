@@ -1,0 +1,42 @@
+2020-01-04 20:41:10,229 ERROR [http-nio-8080-exec-10] c.g.b.w.b.r.WxPayUnifiedOrderResult [BaseWxPayResult.java : 274] 
+结果业务代码异常，返回结果：{return_msg=mch_id参数长度有误, return_code=FAIL},
+返回代码：FAIL，返回信息：mch_id参数长度有误
+2020-01-04 20:41:14,760 ERROR [http-nio-8080-exec-4] c.g.b.w.b.r.WxPayUnifiedOrderResult [BaseWxPayResult.java : 274] 
+结果业务代码异常，返回结果：{return_msg=mch_id参数长度有误, return_code=FAIL},
+返回代码：FAIL，返回信息：mch_id参数长度有误
+2020-01-04 20:41:17,633 ERROR [http-nio-8080-exec-7] c.g.b.w.b.r.WxPayUnifiedOrderResult [BaseWxPayResult.java : 274] 
+结果业务代码异常，返回结果：{return_msg=mch_id参数长度有误, return_code=FAIL},
+返回代码：FAIL，返回信息：mch_id参数长度有误
+2020-01-04 20:41:28,063 ERROR [http-nio-8080-exec-2] c.g.b.w.b.r.WxPayUnifiedOrderResult [BaseWxPayResult.java : 274] 
+结果业务代码异常，返回结果：{return_msg=mch_id参数长度有误, return_code=FAIL},
+返回代码：FAIL，返回信息：mch_id参数长度有误
+2020-01-04 20:41:30,329 ERROR [http-nio-8080-exec-10] c.g.b.w.b.r.WxPayUnifiedOrderResult [BaseWxPayResult.java : 274] 
+结果业务代码异常，返回结果：{return_msg=mch_id参数长度有误, return_code=FAIL},
+返回代码：FAIL，返回信息：mch_id参数长度有误
+2020-01-04 20:41:36,209 ERROR [http-nio-8080-exec-4] c.g.b.w.b.r.WxPayUnifiedOrderResult [BaseWxPayResult.java : 274] 
+结果业务代码异常，返回结果：{return_msg=mch_id参数长度有误, return_code=FAIL},
+返回代码：FAIL，返回信息：mch_id参数长度有误
+2020-01-04 20:53:27,940 ERROR [http-nio-8080-exec-4] c.g.b.w.b.r.WxPayUnifiedOrderResult [BaseWxPayResult.java : 274] 
+结果业务代码异常，返回结果：{return_msg=mch_id参数长度有误, return_code=FAIL},
+返回代码：FAIL，返回信息：mch_id参数长度有误
+2020-01-04 20:53:30,975 ERROR [http-nio-8080-exec-7] c.g.b.w.b.r.WxPayUnifiedOrderResult [BaseWxPayResult.java : 274] 
+结果业务代码异常，返回结果：{return_msg=mch_id参数长度有误, return_code=FAIL},
+返回代码：FAIL，返回信息：mch_id参数长度有误
+2020-01-04 20:53:32,897 ERROR [http-nio-8080-exec-6] c.g.b.w.b.r.WxPayUnifiedOrderResult [BaseWxPayResult.java : 274] 
+结果业务代码异常，返回结果：{return_msg=mch_id参数长度有误, return_code=FAIL},
+返回代码：FAIL，返回信息：mch_id参数长度有误
+2020-01-04 20:53:34,145 ERROR [http-nio-8080-exec-9] c.g.b.w.b.r.WxPayUnifiedOrderResult [BaseWxPayResult.java : 274] 
+结果业务代码异常，返回结果：{return_msg=mch_id参数长度有误, return_code=FAIL},
+返回代码：FAIL，返回信息：mch_id参数长度有误
+2020-01-04 20:53:35,914 ERROR [http-nio-8080-exec-2] c.g.b.w.b.r.WxPayUnifiedOrderResult [BaseWxPayResult.java : 274] 
+结果业务代码异常，返回结果：{return_msg=mch_id参数长度有误, return_code=FAIL},
+返回代码：FAIL，返回信息：mch_id参数长度有误
+2020-01-04 20:53:36,737 ERROR [http-nio-8080-exec-8] c.g.b.w.b.r.WxPayUnifiedOrderResult [BaseWxPayResult.java : 274] 
+结果业务代码异常，返回结果：{return_msg=mch_id参数长度有误, return_code=FAIL},
+返回代码：FAIL，返回信息：mch_id参数长度有误
+2020-01-04 20:53:37,163 ERROR [http-nio-8080-exec-10] c.g.b.w.b.r.WxPayUnifiedOrderResult [BaseWxPayResult.java : 274] 
+结果业务代码异常，返回结果：{return_msg=mch_id参数长度有误, return_code=FAIL},
+返回代码：FAIL，返回信息：mch_id参数长度有误
+2020-01-04 20:53:37,292 ERROR [http-nio-8080-exec-1] c.g.b.w.b.r.WxPayUnifiedOrderResult [BaseWxPayResult.java : 274] 
+结果业务代码异常，返回结果：{return_msg=mch_id参数长度有误, return_code=FAIL},
+返回代码：FAIL，返回信息：mch_id参数长度有误

@@ -25,8 +25,6 @@
         </template>
       </el-table-column>
 
-      <el-table-column align="center" label="关键字" prop="keywords"/>
-
       <el-table-column align="center" min-width="100" label="简介" prop="desc"/>
 
       <el-table-column align="center" label="级别" prop="level">
@@ -48,9 +46,6 @@
       <el-form ref="dataForm" :rules="rules" :model="dataForm" status-icon label-position="left" label-width="100px" style="width: 400px; margin-left:50px;">
         <el-form-item label="类目名称" prop="name">
           <el-input v-model="dataForm.name"/>
-        </el-form-item>
-        <el-form-item label="关键字" prop="keywords">
-          <el-input v-model="dataForm.keywords"/>
         </el-form-item>
         <el-form-item label="级别" prop="level">
           <el-select v-model="dataForm.level" @change="onLevelChange">

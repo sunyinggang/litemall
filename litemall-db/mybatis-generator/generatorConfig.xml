@@ -43,7 +43,7 @@
 
         <!--数据库连接信息-->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://127.0.0.1:3306/litemall?useUnicode=true&amp;characterEncoding=UTF-8&amp;serverTimezone=UTC&amp;verifyServerCertificate=false&amp;useSSL=false"
+                        connectionURL="jdbc:mysql://127.0.0.1:3306/iitemmall?useUnicode=true&amp;characterEncoding=UTF-8&amp;serverTimezone=UTC&amp;verifyServerCertificate=false&amp;useSSL=false"
                         userId="root"
                         password="123456"/>
 
@@ -67,6 +67,9 @@
             <columnOverride column="role_ids" javaType="java.lang.Integer[]"
                             typeHandler="org.linlinjava.litemall.db.mybatis.JsonIntegerArrayTypeHandler"/>
         </table>
+        <table tableName="litemall_brand">
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+        </table>
         <table tableName="litemall_cart">
             <generatedKey column="id" sqlStatement="MySql" identity="true"/>
             <columnOverride column="specifications" javaType="java.lang.String[]"
@@ -82,6 +85,16 @@
             <generatedKey column="id" sqlStatement="MySql" identity="true"/>
             <columnOverride column="pic_urls" javaType="java.lang.String[]"
                             typeHandler="org.linlinjava.litemall.db.mybatis.JsonStringArrayTypeHandler"/>
+        </table>
+
+        <table tableName="litemall_feedback">
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+            <columnOverride column="pic_urls" javaType="java.lang.String[]"
+                            typeHandler="org.linlinjava.litemall.db.mybatis.JsonStringArrayTypeHandler"/>
+        </table>
+
+        <table tableName="litemall_footprint">
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
         </table>
         <table tableName="litemall_goods">
             <generatedKey column="id" sqlStatement="MySql" identity="true"/>
@@ -99,6 +112,12 @@
             <columnOverride column="specifications" javaType="java.lang.String[]"
                             typeHandler="org.linlinjava.litemall.db.mybatis.JsonStringArrayTypeHandler"/>
         </table>
+        <table tableName="litemall_issue">
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+        </table>
+        <table tableName="litemall_keyword">
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+        </table>
         <table tableName="litemall_order">
             <generatedKey column="id" sqlStatement="MySql" identity="true"/>
         </table>
@@ -113,13 +132,49 @@
         <table tableName="litemall_region">
             <generatedKey column="id" sqlStatement="MySql" identity="true"/>
         </table>
+        <table tableName="litemall_search_history">
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+        </table>
         <table tableName="litemall_storage">
             <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+        </table>
+        <table tableName="litemall_topic">
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+            <columnOverride column="goods" javaType="java.lang.Integer[]"
+                            typeHandler="org.linlinjava.litemall.db.mybatis.JsonIntegerArrayTypeHandler"/>
         </table>
         <table tableName="litemall_user">
             <generatedKey column="id" sqlStatement="MySql" identity="true"/>
         </table>
         <table tableName="litemall_system">
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+        </table>
+
+        <table tableName="litemall_user_formid">
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+        </table>
+
+        <table tableName="litemall_groupon_rules">
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+        </table>
+        <table tableName="litemall_groupon">
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+        </table>
+        <table tableName="litemall_coupon">
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+            <columnOverride column="goods_value" javaType="java.lang.Integer[]"
+                            typeHandler="org.linlinjava.litemall.db.mybatis.JsonIntegerArrayTypeHandler"/>
+        </table>
+        <table tableName="litemall_coupon_user">
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+        </table>
+        <table tableName="litemall_role">
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+        </table>
+        <table tableName="litemall_permission">
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+        </table>
+        <table tableName="litemall_log">
             <generatedKey column="id" sqlStatement="MySql" identity="true"/>
         </table>
     </context>

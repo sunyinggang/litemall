@@ -68,30 +68,8 @@
           <el-input v-model="goods.unit" placeholder="件 / 个 / 盒" />
         </el-form-item>
 
-        <el-form-item label="关键字">
-          <el-tag v-for="tag in keywords" :key="tag" closable type="primary" @close="handleClose(tag)">
-            {{ tag }}
-          </el-tag>
-          <el-input
-            v-if="newKeywordVisible"
-            ref="newKeywordInput"
-            v-model="newKeyword"
-            class="input-new-keyword"
-
-            @keyup.enter.native="handleInputConfirm"
-            @blur="handleInputConfirm"
-          />
-          <el-button v-else class="button-new-keyword" type="primary" @click="showInput">+ 增加</el-button>
-        </el-form-item>
-
         <el-form-item label="所属分类">
           <el-cascader :options="categoryList" expand-trigger="hover" clearable @change="handleCategoryChange" />
-        </el-form-item>
-
-        <el-form-item label="所属品牌商">
-          <el-select v-model="goods.brandId" clearable>
-            <el-option v-for="item in brandList" :key="item.value" :label="item.label" :value="item.value" />
-          </el-select>
         </el-form-item>
 
         <el-form-item label="商品简介">
@@ -350,11 +328,8 @@ export default {
   data() {
     return {
       uploadPath,
-      newKeywordVisible: false,
-      newKeyword: '',
       keywords: [],
       categoryList: [],
-      brandList: [],
       goods: { picUrl: '', gallery: [], isHot: false, isNew: true, isOnSale: true },
       specVisiable: false,
       specForm: { specification: '', value: '', picUrl: '' },
@@ -403,7 +378,6 @@ export default {
     init: function() {
       listCatAndBrand().then(response => {
         this.categoryList = response.data.data.categoryList
-        this.brandList = response.data.data.brandList
       })
     },
     handleCategoryChange(value) {
@@ -435,21 +409,6 @@ export default {
     handleClose(tag) {
       this.keywords.splice(this.keywords.indexOf(tag), 1)
       this.goods.keywords = this.keywords.toString()
-    },
-    showInput() {
-      this.newKeywordVisible = true
-      this.$nextTick(_ => {
-        this.$refs.newKeywordInput.$refs.input.focus()
-      })
-    },
-    handleInputConfirm() {
-      const newKeyword = this.newKeyword
-      if (newKeyword) {
-        this.keywords.push(newKeyword)
-        this.goods.keywords = this.keywords.toString()
-      }
-      this.newKeywordVisible = false
-      this.newKeyword = ''
     },
     uploadPicUrl: function(response) {
       this.goods.picUrl = response.data.url

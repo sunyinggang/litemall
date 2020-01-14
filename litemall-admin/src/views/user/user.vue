@@ -25,12 +25,6 @@
 
       <el-table-column align="center" label="生日" prop="birthday"/>
 
-      <el-table-column align="center" label="用户等级" prop="userLevel">
-        <template slot-scope="scope">
-          <el-tag >{{ levelDic[scope.row.userLevel] }}</el-tag>
-        </template>
-      </el-table-column>
-
       <el-table-column align="center" label="状态" prop="status">
         <template slot-scope="scope">
           <el-tag>{{ statusDic[scope.row.status] }}</el-tag>
@@ -66,7 +60,6 @@ export default {
       },
       downloadLoading: false,
       genderDic: ['未知', '男', '女'],
-      levelDic: ['普通用户', 'VIP用户', '高级VIP用户'],
       statusDic: ['可用', '禁用', '注销']
     }
   },

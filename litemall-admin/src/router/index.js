@@ -68,16 +68,7 @@ export const constantRouterMap = [
         meta: { title: '首页', icon: 'dashboard', affix: true }
       }
     ]
-  }
-]
-
-export default new Router({
-  // mode: 'history', // require service support
-  scrollBehavior: () => ({ y: 0 }),
-  routes: constantRouterMap
-})
-
-export const asyncRouterMap = [
+  },
   {
     path: '/user',
     component: Layout,
@@ -94,7 +85,6 @@ export const asyncRouterMap = [
         component: () => import('@/views/user/user'),
         name: 'user',
         meta: {
-          perms: ['GET /admin/user/list'],
           title: '会员管理',
           noCache: true
         }
@@ -104,7 +94,6 @@ export const asyncRouterMap = [
         component: () => import('@/views/user/address'),
         name: 'address',
         meta: {
-          perms: ['GET /admin/address/list'],
           title: '收货地址',
           noCache: true
         }
@@ -128,7 +117,6 @@ export const asyncRouterMap = [
         component: () => import('@/views/mall/category'),
         name: 'category',
         meta: {
-          perms: ['GET /admin/category/list', 'POST /admin/category/create', 'GET /admin/category/read', 'POST /admin/category/update', 'POST /admin/category/delete'],
           title: '商品类目',
           noCache: true
         }
@@ -138,7 +126,6 @@ export const asyncRouterMap = [
         component: () => import('@/views/mall/order'),
         name: 'order',
         meta: {
-          perms: ['GET /admin/order/list', 'GET /admin/order/detail', 'POST /admin/order/ordership', 'POST /admin/order/orderrefund', 'POST /admin/order/orderreply'],
           title: '订单管理',
           noCache: true
         }
@@ -161,7 +148,6 @@ export const asyncRouterMap = [
         component: () => import('@/views/goods/list'),
         name: 'goodsList',
         meta: {
-          perms: ['GET /admin/goods/list', 'POST /admin/goods/delete'],
           title: '商品列表',
           noCache: true
         }
@@ -171,7 +157,6 @@ export const asyncRouterMap = [
         component: () => import('@/views/goods/create'),
         name: 'goodsCreate',
         meta: {
-          perms: ['POST /admin/goods/create'],
           title: '商品上架',
           noCache: true
         }
@@ -181,7 +166,6 @@ export const asyncRouterMap = [
         component: () => import('@/views/goods/edit'),
         name: 'goodsEdit',
         meta: {
-          perms: ['GET /admin/goods/detail', 'POST /admin/goods/update', 'POST /admin/goods/catAndBrand'],
           title: '商品编辑',
           noCache: true
         },
@@ -192,7 +176,6 @@ export const asyncRouterMap = [
         component: () => import('@/views/goods/comment'),
         name: 'goodsComment',
         meta: {
-          perms: ['GET /admin/comment/list', 'POST /admin/comment/delete'],
           title: '商品评论',
           noCache: true
         }
@@ -215,7 +198,6 @@ export const asyncRouterMap = [
         component: () => import('@/views/promotion/ad'),
         name: 'ad',
         meta: {
-          perms: ['GET /admin/ad/list', 'POST /admin/ad/create', 'GET /admin/ad/read', 'POST /admin/ad/update', 'POST /admin/ad/delete'],
           title: '广告管理',
           noCache: true
         }
@@ -238,7 +220,6 @@ export const asyncRouterMap = [
         component: () => import('@/views/config/mall'),
         name: 'configMall',
         meta: {
-          perms: ['GET /admin/config/mall', 'POST /admin/config/mall'],
           title: '商场配置',
           noCache: true
         }
@@ -248,7 +229,6 @@ export const asyncRouterMap = [
         component: () => import('@/views/config/express'),
         name: 'configExpress',
         meta: {
-          perms: ['GET /admin/config/express', 'POST /admin/config/express'],
           title: '运费配置',
           noCache: true
         }
@@ -258,7 +238,6 @@ export const asyncRouterMap = [
         component: () => import('@/views/config/order'),
         name: 'configOrder',
         meta: {
-          perms: ['GET /admin/config/order', 'POST /admin/config/order'],
           title: '订单配置',
           noCache: true
         }
@@ -268,14 +247,12 @@ export const asyncRouterMap = [
         component: () => import('@/views/config/wx'),
         name: 'configWx',
         meta: {
-          perms: ['GET /admin/config/wx', 'POST /admin/config/wx'],
           title: '小程序配置',
           noCache: true
         }
       }
     ]
   },
-
   {
     path: '/stat',
     component: Layout,
@@ -292,7 +269,6 @@ export const asyncRouterMap = [
         component: () => import('@/views/stat/user'),
         name: 'statUser',
         meta: {
-          perms: ['GET /admin/stat/user'],
           title: '用户统计',
           noCache: true
         }
@@ -302,7 +278,6 @@ export const asyncRouterMap = [
         component: () => import('@/views/stat/order'),
         name: 'statOrder',
         meta: {
-          perms: ['GET /admin/stat/order'],
           title: '订单统计',
           noCache: true
         }
@@ -312,7 +287,6 @@ export const asyncRouterMap = [
         component: () => import('@/views/stat/goods'),
         name: 'statGoods',
         meta: {
-          perms: ['GET /admin/stat/goods'],
           title: '商品统计',
           noCache: true
         }
@@ -353,3 +327,11 @@ export const asyncRouterMap = [
   },
   { path: '*', redirect: '/404', hidden: true }
 ]
+
+export default new Router({
+  // mode: 'history', // require service support
+  scrollBehavior: () => ({ y: 0 }),
+  routes: constantRouterMap
+})
+export const asyncRouterMap = []
+

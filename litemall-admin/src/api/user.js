@@ -24,27 +24,3 @@ export function listCollect(query) {
   })
 }
 
-export function listFeedback(query) {
-  return request({
-    url: '/feedback/list',
-    method: 'get',
-    params: query
-  })
-}
-
-export function listFootprint(query) {
-  return request({
-    url: '/footprint/list',
-    method: 'get',
-    params: query
-  })
-}
-
-export function listHistory(query) {
-  return request({
-    url: '/history/list',
-    method: 'get',
-    params: query
-  })
-}
-

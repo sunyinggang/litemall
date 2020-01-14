@@ -1,0 +1,1204 @@
+2020-01-01 12:32:28,536 INFO [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 50] Starting Application on LAPTOP-1DJL8JUI with PID 22104 (D:\MyCode\Java\litemall\litemall-all\target\classes started by 迎港 in D:\MyCode\Java\litemall)
+2020-01-01 12:32:28,546 DEBUG [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 53] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2020-01-01 12:32:28,546 INFO [restartedMain] org.linlinjava.litemall.Application [SpringApplication.java : 679] The following profiles are active: db,core,admin,wx
+2020-01-01 12:32:37,713 ERROR [restartedMain] c.alibaba.druid.pool.DruidDataSource [DruidDataSource.java : 872] init datasource error, url: jdbc:mysql://localhost:3306/iitemmall?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&allowPublicKeyRetrieval=true&verifyServerCertificate=false&useSSL=false
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:786)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:861)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1903)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1846)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1500)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:496)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:636)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.resolveBeanReference(ConfigurationClassEnhancer.java:394)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:366)
+	at org.linlinjava.litemall.admin.config.ShiroConfig$$EnhancerBySpringCGLIB$$35daf321.realm(<generated>)
+	at org.linlinjava.litemall.admin.config.ShiroConfig.defaultWebSecurityManager(ShiroConfig.java:55)
+	at org.linlinjava.litemall.admin.config.ShiroConfig$$EnhancerBySpringCGLIB$$35daf321.CGLIB$defaultWebSecurityManager$1(<generated>)
+	at org.linlinjava.litemall.admin.config.ShiroConfig$$EnhancerBySpringCGLIB$$35daf321$$FastClassBySpringCGLIB$$a6bb2d4.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at org.linlinjava.litemall.admin.config.ShiroConfig$$EnhancerBySpringCGLIB$$35daf321.defaultWebSecurityManager(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getSingletonFactoryBeanForTypeCheck(AbstractAutowireCapableBeanFactory.java:991)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:865)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:574)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:479)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:227)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1412)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1211)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:109)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:251)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1124)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1097)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:240)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:721)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:534)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at org.linlinjava.litemall.Application.main(Application.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 166 common frames omitted
+2020-01-01 12:32:37,733 ERROR [restartedMain] c.alibaba.druid.pool.DruidDataSource [DruidDataSource.java : 905] {dataSource-1} init error
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:786)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:861)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1903)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1846)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1500)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:496)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:636)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.resolveBeanReference(ConfigurationClassEnhancer.java:394)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:366)
+	at org.linlinjava.litemall.admin.config.ShiroConfig$$EnhancerBySpringCGLIB$$35daf321.realm(<generated>)
+	at org.linlinjava.litemall.admin.config.ShiroConfig.defaultWebSecurityManager(ShiroConfig.java:55)
+	at org.linlinjava.litemall.admin.config.ShiroConfig$$EnhancerBySpringCGLIB$$35daf321.CGLIB$defaultWebSecurityManager$1(<generated>)
+	at org.linlinjava.litemall.admin.config.ShiroConfig$$EnhancerBySpringCGLIB$$35daf321$$FastClassBySpringCGLIB$$a6bb2d4.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at org.linlinjava.litemall.admin.config.ShiroConfig$$EnhancerBySpringCGLIB$$35daf321.defaultWebSecurityManager(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getSingletonFactoryBeanForTypeCheck(AbstractAutowireCapableBeanFactory.java:991)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:865)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:574)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:479)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:227)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1412)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1211)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:109)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:251)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1124)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1097)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:240)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:721)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:534)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at org.linlinjava.litemall.Application.main(Application.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 166 common frames omitted
+2020-01-01 12:32:37,783 ERROR [restartedMain] o.s.boot.SpringApplication [SpringApplication.java : 858] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'objectMapperConfigurer' defined in class path resource [springfox/documentation/spring/web/SpringfoxWebMvcConfiguration.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authorizationAttributeSourceAdvisor' defined in class path resource [org/linlinjava/litemall/admin/config/ShiroConfig.class]: Unsatisfied dependency expressed through method 'authorizationAttributeSourceAdvisor' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'shiroFilterFactoryBean' defined in class path resource [org/linlinjava/litemall/admin/config/ShiroConfig.class]: Unsatisfied dependency expressed through method 'shiroFilterFactoryBean' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'defaultWebSecurityManager' defined in class path resource [org/linlinjava/litemall/admin/config/ShiroConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.shiro.web.mgt.DefaultWebSecurityManager]: Factory method 'defaultWebSecurityManager' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'realm': Unsatisfied dependency expressed through field 'adminService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'litemallAdminService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'litemallAdminMapper' defined in file [D:\MyCode\Java\litemall\litemall-db\target\classes\org\linlinjava\litemall\db\dao\LitemallAdminMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/alibaba/druid/spring/boot/autoconfigure/DruidDataSourceAutoConfigure.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:510)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:240)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:721)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:534)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at org.linlinjava.litemall.Application.main(Application.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authorizationAttributeSourceAdvisor' defined in class path resource [org/linlinjava/litemall/admin/config/ShiroConfig.class]: Unsatisfied dependency expressed through method 'authorizationAttributeSourceAdvisor' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'shiroFilterFactoryBean' defined in class path resource [org/linlinjava/litemall/admin/config/ShiroConfig.class]: Unsatisfied dependency expressed through method 'shiroFilterFactoryBean' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'defaultWebSecurityManager' defined in class path resource [org/linlinjava/litemall/admin/config/ShiroConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.shiro.web.mgt.DefaultWebSecurityManager]: Factory method 'defaultWebSecurityManager' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'realm': Unsatisfied dependency expressed through field 'adminService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'litemallAdminService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'litemallAdminMapper' defined in file [D:\MyCode\Java\litemall\litemall-db\target\classes\org\linlinjava\litemall\db\dao\LitemallAdminMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/alibaba/druid/spring/boot/autoconfigure/DruidDataSourceAutoConfigure.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:109)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:251)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1124)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1097)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:504)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'shiroFilterFactoryBean' defined in class path resource [org/linlinjava/litemall/admin/config/ShiroConfig.class]: Unsatisfied dependency expressed through method 'shiroFilterFactoryBean' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'defaultWebSecurityManager' defined in class path resource [org/linlinjava/litemall/admin/config/ShiroConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.shiro.web.mgt.DefaultWebSecurityManager]: Factory method 'defaultWebSecurityManager' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'realm': Unsatisfied dependency expressed through field 'adminService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'litemallAdminService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'litemallAdminMapper' defined in file [D:\MyCode\Java\litemall\litemall-db\target\classes\org\linlinjava\litemall\db\dao\LitemallAdminMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/alibaba/druid/spring/boot/autoconfigure/DruidDataSourceAutoConfigure.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getSingletonFactoryBeanForTypeCheck(AbstractAutowireCapableBeanFactory.java:991)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:865)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:574)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:479)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:227)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1412)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1211)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+	... 36 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'defaultWebSecurityManager' defined in class path resource [org/linlinjava/litemall/admin/config/ShiroConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.shiro.web.mgt.DefaultWebSecurityManager]: Factory method 'defaultWebSecurityManager' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'realm': Unsatisfied dependency expressed through field 'adminService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'litemallAdminService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'litemallAdminMapper' defined in file [D:\MyCode\Java\litemall\litemall-db\target\classes\org\linlinjava\litemall\db\dao\LitemallAdminMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/alibaba/druid/spring/boot/autoconfigure/DruidDataSourceAutoConfigure.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:627)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+	... 50 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.shiro.web.mgt.DefaultWebSecurityManager]: Factory method 'defaultWebSecurityManager' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'realm': Unsatisfied dependency expressed through field 'adminService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'litemallAdminService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'litemallAdminMapper' defined in file [D:\MyCode\Java\litemall\litemall-db\target\classes\org\linlinjava\litemall\db\dao\LitemallAdminMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/alibaba/druid/spring/boot/autoconfigure/DruidDataSourceAutoConfigure.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622)
+	... 64 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'realm': Unsatisfied dependency expressed through field 'adminService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'litemallAdminService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'litemallAdminMapper' defined in file [D:\MyCode\Java\litemall\litemall-db\target\classes\org\linlinjava\litemall\db\dao\LitemallAdminMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/alibaba/druid/spring/boot/autoconfigure/DruidDataSourceAutoConfigure.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.resolveBeanReference(ConfigurationClassEnhancer.java:394)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:366)
+	at org.linlinjava.litemall.admin.config.ShiroConfig$$EnhancerBySpringCGLIB$$35daf321.realm(<generated>)
+	at org.linlinjava.litemall.admin.config.ShiroConfig.defaultWebSecurityManager(ShiroConfig.java:55)
+	at org.linlinjava.litemall.admin.config.ShiroConfig$$EnhancerBySpringCGLIB$$35daf321.CGLIB$defaultWebSecurityManager$1(<generated>)
+	at org.linlinjava.litemall.admin.config.ShiroConfig$$EnhancerBySpringCGLIB$$35daf321$$FastClassBySpringCGLIB$$a6bb2d4.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at org.linlinjava.litemall.admin.config.ShiroConfig$$EnhancerBySpringCGLIB$$35daf321.defaultWebSecurityManager(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 65 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'litemallAdminService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'litemallAdminMapper' defined in file [D:\MyCode\Java\litemall\litemall-db\target\classes\org\linlinjava\litemall\db\dao\LitemallAdminMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/alibaba/druid/spring/boot/autoconfigure/DruidDataSourceAutoConfigure.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:324)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 88 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'litemallAdminMapper' defined in file [D:\MyCode\Java\litemall\litemall-db\target\classes\org\linlinjava\litemall\db\dao\LitemallAdminMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/alibaba/druid/spring/boot/autoconfigure/DruidDataSourceAutoConfigure.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1515)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:496)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:636)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:180)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:321)
+	... 99 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/alibaba/druid/spring/boot/autoconfigure/DruidDataSourceAutoConfigure.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1500)
+	... 115 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/alibaba/druid/spring/boot/autoconfigure/DruidDataSourceAutoConfigure.class]: Invocation of init method failed; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+	... 128 common frames omitted
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+	at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:786)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:861)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1903)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1846)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 139 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 166 common frames omitted
+2020-01-01 12:35:09,356 INFO [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 50] Starting Application on LAPTOP-1DJL8JUI with PID 16624 (D:\MyCode\Java\litemall\litemall-all\target\classes started by 迎港 in D:\MyCode\Java\litemall)
+2020-01-01 12:35:09,366 DEBUG [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 53] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2020-01-01 12:35:09,366 INFO [restartedMain] org.linlinjava.litemall.Application [SpringApplication.java : 679] The following profiles are active: db,core,admin,wx
+2020-01-01 12:35:18,167 DEBUG [restartedMain] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, key_name, key_value, add_time, update_time, deleted from litemall_system WHERE ( deleted = ? ) 
+2020-01-01 12:35:18,324 DEBUG [restartedMain] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean)
+2020-01-01 12:35:18,368 DEBUG [restartedMain] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 18
+2020-01-01 12:35:18,375 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 42] ===========================================================================================================================================================================================================
+2020-01-01 12:35:18,375 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 43] 
+2020-01-01 12:35:18,375 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 44]               Litemall 初始化信息
+2020-01-01 12:35:18,376 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 45] 
+2020-01-01 12:35:18,376 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 67] 
+2020-01-01 12:35:18,376 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 68]     [[  系统信息  ]]
+2020-01-01 12:35:18,376 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 69] 
+2020-01-01 12:35:18,376 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     服务器端口        ->        8080
+2020-01-01 12:35:18,377 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     数据库USER        ->        root
+2020-01-01 12:35:18,377 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     数据库地址        ->        jdbc:mysql://localhost:3306/iitemmall?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&allowPublicKeyRetrieval=true&verifyServerCertificate=false&useSSL=false
+2020-01-01 12:35:18,377 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 67] 
+2020-01-01 12:35:18,378 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 68]     [[  模块状态  ]]
+2020-01-01 12:35:18,379 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 69] 
+2020-01-01 12:35:18,379 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     邮件        ->        false
+2020-01-01 12:35:18,380 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     短信        ->        false
+2020-01-01 12:35:18,380 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     模版消息        ->        false
+2020-01-01 12:35:18,380 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     快递信息        ->        false
+2020-01-01 12:35:18,381 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     快递鸟ID        ->        XXXXXXXXX
+2020-01-01 12:35:18,382 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     对象存储        ->        local
+2020-01-01 12:35:18,382 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     本地对象存储路径        ->        storage
+2020-01-01 12:35:18,382 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     本地对象访问地址        ->        http://localhost:8080/wx/storage/fetch/
+2020-01-01 12:35:18,383 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 67] 
+2020-01-01 12:35:18,383 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 68]     [[  微信相关  ]]
+2020-01-01 12:35:18,383 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 69] 
+2020-01-01 12:35:18,383 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     微信APP KEY        ->        wxa5b486c6b918ecfb
+2020-01-01 12:35:18,384 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     微信APP-SECRET        ->        e04004829d4c383b4db7769d88dfbca1
+2020-01-01 12:35:18,386 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     微信支付MCH-ID        ->        111111
+2020-01-01 12:35:18,388 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     微信支付MCH-KEY        ->        xxxxxx
+2020-01-01 12:35:18,389 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     微信支付通知地址        ->        http://www.example.com/wx/order/pay-notify
+2020-01-01 12:35:18,389 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 67] 
+2020-01-01 12:35:18,390 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 68]     [[  系统设置  ]]
+2020-01-01 12:35:18,390 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 69] 
+2020-01-01 12:35:18,390 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     自动创建朋友圈分享图        ->        false
+2020-01-01 12:35:18,390 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     商场名称        ->        litemall
+2020-01-01 12:35:18,391 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     首页显示记录数：NEW,HOT,BRAND,TOPIC,CatlogList,CatlogMore        ->        6,6,4,4,4,4
+2020-01-01 12:35:18,391 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 49]   
+2020-01-01 12:35:18,391 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 50] ===========================================================================================================================================================================================================
+2020-01-01 12:35:24,514 INFO [scheduling-1] o.l.litemall.admin.job.CouponJob [CouponJob.java : 36] 系统开启任务检查优惠券是否已经过期
+2020-01-01 12:35:24,547 DEBUG [scheduling-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, `desc`, tag, total, discount, `min`, `limit`, `type`, `status`, goods_type, goods_value, code, time_type, `days`, start_time, end_time, add_time, update_time, deleted from litemall_coupon WHERE ( `status` = ? and time_type = ? and end_time < ? and deleted = ? ) 
+2020-01-01 12:35:24,571 DEBUG [scheduling-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), 1(Short), 2020-01-01 12:35:24.527(Timestamp), false(Boolean)
+2020-01-01 12:35:24,579 DEBUG [scheduling-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 0
+2020-01-01 12:35:24,594 DEBUG [scheduling-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, user_id, coupon_id, `status`, used_time, start_time, end_time, order_id, add_time, update_time, deleted from litemall_coupon_user WHERE ( `status` = ? and end_time < ? and deleted = ? ) 
+2020-01-01 12:35:24,597 DEBUG [scheduling-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), 2020-01-01 12:35:24.587(Timestamp), false(Boolean)
+2020-01-01 12:35:24,600 DEBUG [scheduling-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 0
+2020-01-01 12:35:26,584 INFO [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 59] Started Application in 18.872 seconds (JVM running for 21.991)
+2020-01-01 12:35:26,619 DEBUG [restartedMain] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, user_id, order_sn, order_status, consignee, mobile, address, message, goods_price, freight_price, coupon_price, integral_price, groupon_price, order_price, actual_price, pay_id, pay_time, ship_sn, ship_channel, ship_time, refund_amount, refund_type, refund_content, refund_time, confirm_time, comments, end_time, add_time, update_time, deleted from litemall_order WHERE ( order_status = ? and deleted = ? ) 
+2020-01-01 12:35:26,621 DEBUG [restartedMain] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 101(Short), false(Boolean)
+2020-01-01 12:35:26,625 DEBUG [restartedMain] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 0
+2020-01-01 12:35:26,642 DEBUG [restartedMain] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, goods_id, goods_name, pic_url, discount, discount_member, expire_time, `status`, add_time, update_time, deleted from litemall_groupon_rules WHERE ( `status` = ? and deleted = ? ) 
+2020-01-01 12:35:26,644 DEBUG [restartedMain] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), false(Boolean)
+2020-01-01 12:35:26,650 DEBUG [restartedMain] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:36:24,536 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, username, `password`, last_login_ip, last_login_time, avatar, add_time, update_time, deleted, role_ids from litemall_admin WHERE ( username = ? and deleted = ? ) 
+2020-01-01 12:36:24,563 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: admin123(String), false(Boolean)
+2020-01-01 12:36:24,586 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:36:24,742 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.updateByPrimaryKeySelective [BaseJdbcLogger.java : 159] ==>  Preparing: update litemall_admin SET username = ?, `password` = ?, last_login_ip = ?, last_login_time = ?, avatar = ?, add_time = ?, update_time = ?, deleted = ?, role_ids = ? where id = ? 
+2020-01-01 12:36:24,832 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.updateByPrimaryKeySelective [BaseJdbcLogger.java : 159] ==> Parameters: admin123(String), $2a$10$.rEfyBb/GURD9P2p0fRg/OAJGloGNDkJS4lY0cQHeqDgsbdTylBpu(String), 0:0:0:0:0:0:0:1(String), 2020-01-01 12:36:24.736(Timestamp), https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif(String), 2018-02-01 00:00:00.0(Timestamp), 2020-01-01 12:36:24.736(Timestamp), false(Boolean), [1](String), 1(Integer)
+2020-01-01 12:36:24,845 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.updateByPrimaryKeySelective [BaseJdbcLogger.java : 159] <==    Updates: 1
+2020-01-01 12:36:24,852 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.insertSelective [BaseJdbcLogger.java : 159] ==>  Preparing: insert into litemall_log ( `admin`, ip, `type`, `action`, `status`, `result`, `comment`, add_time, update_time ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-01-01 12:36:24,869 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.insertSelective [BaseJdbcLogger.java : 159] ==> Parameters: admin123(String), 0:0:0:0:0:0:0:1(String), 1(Integer), 登录(String), true(Boolean), (String), (String), 2020-01-01 12:36:24.848(Timestamp), 2020-01-01 12:36:24.848(Timestamp)
+2020-01-01 12:36:24,874 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.insertSelective [BaseJdbcLogger.java : 159] <==    Updates: 1
+2020-01-01 12:36:24,875 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.insertSelective!selectKey [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT LAST_INSERT_ID() 
+2020-01-01 12:36:24,880 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.insertSelective!selectKey [BaseJdbcLogger.java : 159] ==> Parameters: 
+2020-01-01 12:36:24,883 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.insertSelective!selectKey [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:36:25,027 DEBUG [http-nio-8080-exec-5] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, `desc`, enabled, add_time, update_time, deleted from litemall_role WHERE ( id in ( ? ) and enabled = ? and deleted = ? ) 
+2020-01-01 12:36:25,034 DEBUG [http-nio-8080-exec-5] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1(Integer), true(Boolean), false(Boolean)
+2020-01-01 12:36:25,040 DEBUG [http-nio-8080-exec-5] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:36:25,057 DEBUG [http-nio-8080-exec-5] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, role_id, permission, add_time, update_time, deleted from litemall_permission WHERE ( role_id in ( ? ) and deleted = ? ) 
+2020-01-01 12:36:25,059 DEBUG [http-nio-8080-exec-5] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1(Integer), false(Boolean)
+2020-01-01 12:36:25,064 DEBUG [http-nio-8080-exec-5] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:36:25,561 DEBUG [http-nio-8080-exec-7] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select count(*) from litemall_user WHERE ( deleted = ? ) 
+2020-01-01 12:36:25,564 DEBUG [http-nio-8080-exec-7] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean)
+2020-01-01 12:36:25,570 DEBUG [http-nio-8080-exec-7] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:36:25,594 DEBUG [http-nio-8080-exec-7] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select count(*) from litemall_goods WHERE ( deleted = ? ) 
+2020-01-01 12:36:25,596 DEBUG [http-nio-8080-exec-7] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean)
+2020-01-01 12:36:25,613 DEBUG [http-nio-8080-exec-7] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:36:25,629 DEBUG [http-nio-8080-exec-7] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select count(*) from litemall_goods_product WHERE ( deleted = ? ) 
+2020-01-01 12:36:25,631 DEBUG [http-nio-8080-exec-7] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean)
+2020-01-01 12:36:25,636 DEBUG [http-nio-8080-exec-7] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:36:25,638 DEBUG [http-nio-8080-exec-7] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select count(*) from litemall_order WHERE ( deleted = ? ) 
+2020-01-01 12:36:25,640 DEBUG [http-nio-8080-exec-7] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean)
+2020-01-01 12:36:25,643 DEBUG [http-nio-8080-exec-7] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:36:50,838 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, `desc`, enabled, add_time, update_time, deleted from litemall_role WHERE ( id in ( ? ) and enabled = ? and deleted = ? ) 
+2020-01-01 12:36:50,842 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1(Integer), true(Boolean), false(Boolean)
+2020-01-01 12:36:50,845 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:36:50,850 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, role_id, permission, add_time, update_time, deleted from litemall_permission WHERE ( role_id in ( ? ) and deleted = ? ) 
+2020-01-01 12:36:50,852 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1(Integer), false(Boolean)
+2020-01-01 12:36:50,854 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:36:50,968 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, `desc`, enabled, add_time, update_time, deleted from litemall_role WHERE ( id in ( ? ) and enabled = ? and deleted = ? ) 
+2020-01-01 12:36:50,969 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1(Integer), true(Boolean), false(Boolean)
+2020-01-01 12:36:50,985 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:36:50,989 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, role_id, permission, add_time, update_time, deleted from litemall_permission WHERE ( role_id in ( ? ) and deleted = ? ) 
+2020-01-01 12:36:50,990 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1(Integer), false(Boolean)
+2020-01-01 12:36:50,993 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:36:51,099 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.selectByExampleWithBLOBs_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (deleted = ?) 
+2020-01-01 12:36:51,106 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.selectByExampleWithBLOBs_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean)
+2020-01-01 12:36:51,108 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.selectByExampleWithBLOBs_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:36:51,114 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.selectByExampleWithBLOBs [BaseJdbcLogger.java : 159] ==>  Preparing: select id, goods_sn, `name`, category_id, brand_id, gallery, keywords, brief, is_on_sale, sort_order, pic_url, share_url, is_new, is_hot, unit, counter_price, retail_price, add_time, update_time, deleted , detail from litemall_goods WHERE ( deleted = ? ) order by add_time desc LIMIT ? 
+2020-01-01 12:36:51,120 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.selectByExampleWithBLOBs [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean), 20(Integer)
+2020-01-01 12:36:51,169 DEBUG [http-nio-8080-exec-10] o.l.l.d.d.L.selectByExampleWithBLOBs [BaseJdbcLogger.java : 159] <==      Total: 20
+2020-01-01 12:36:58,374 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( `level` = ? and deleted = ? ) 
+2020-01-01 12:36:58,378 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: L1(String), false(Boolean)
+2020-01-01 12:36:58,388 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 9
+2020-01-01 12:36:58,391 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( pid = ? and deleted = ? ) 
+2020-01-01 12:36:58,394 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1005000(Integer), false(Boolean)
+2020-01-01 12:36:58,406 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 10
+2020-01-01 12:36:58,409 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( pid = ? and deleted = ? ) 
+2020-01-01 12:36:58,410 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1005001(Integer), false(Boolean)
+2020-01-01 12:36:58,415 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 9
+2020-01-01 12:36:58,418 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( pid = ? and deleted = ? ) 
+2020-01-01 12:36:58,419 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1005002(Integer), false(Boolean)
+2020-01-01 12:36:58,426 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 10
+2020-01-01 12:36:58,428 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( pid = ? and deleted = ? ) 
+2020-01-01 12:36:58,429 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1008000(Integer), false(Boolean)
+2020-01-01 12:36:58,434 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 9
+2020-01-01 12:36:58,438 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( pid = ? and deleted = ? ) 
+2020-01-01 12:36:58,438 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1010000(Integer), false(Boolean)
+2020-01-01 12:36:58,445 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 11
+2020-01-01 12:36:58,448 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( pid = ? and deleted = ? ) 
+2020-01-01 12:36:58,449 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1011000(Integer), false(Boolean)
+2020-01-01 12:36:58,453 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 7
+2020-01-01 12:36:58,457 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( pid = ? and deleted = ? ) 
+2020-01-01 12:36:58,459 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1012000(Integer), false(Boolean)
+2020-01-01 12:36:58,464 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 10
+2020-01-01 12:36:58,467 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( pid = ? and deleted = ? ) 
+2020-01-01 12:36:58,468 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1013001(Integer), false(Boolean)
+2020-01-01 12:36:58,473 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 7
+2020-01-01 12:36:58,476 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( pid = ? and deleted = ? ) 
+2020-01-01 12:36:58,477 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1019000(Integer), false(Boolean)
+2020-01-01 12:36:58,482 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 11
+2020-01-01 12:36:58,499 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, `desc`, pic_url, sort_order, floor_price, add_time, update_time, deleted from litemall_brand WHERE ( deleted = ? ) 
+2020-01-01 12:36:58,500 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean)
+2020-01-01 12:36:58,518 DEBUG [http-nio-8080-exec-2] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 49
+2020-01-01 12:37:16,052 DEBUG [http-nio-8080-exec-5] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, `desc`, enabled, add_time, update_time, deleted from litemall_role WHERE ( id in ( ? ) and enabled = ? and deleted = ? ) 
+2020-01-01 12:37:16,053 DEBUG [http-nio-8080-exec-5] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1(Integer), true(Boolean), false(Boolean)
+2020-01-01 12:37:16,057 DEBUG [http-nio-8080-exec-5] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:37:16,060 DEBUG [http-nio-8080-exec-5] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, role_id, permission, add_time, update_time, deleted from litemall_permission WHERE ( role_id in ( ? ) and deleted = ? ) 
+2020-01-01 12:37:16,061 DEBUG [http-nio-8080-exec-5] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1(Integer), false(Boolean)
+2020-01-01 12:37:16,062 DEBUG [http-nio-8080-exec-5] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:37:16,066 DEBUG [http-nio-8080-exec-5] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, `desc`, enabled, add_time, update_time, deleted from litemall_role WHERE ( id in ( ? ) and enabled = ? and deleted = ? ) 
+2020-01-01 12:37:16,067 DEBUG [http-nio-8080-exec-5] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1(Integer), true(Boolean), false(Boolean)
+2020-01-01 12:37:16,069 DEBUG [http-nio-8080-exec-5] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:37:16,074 DEBUG [http-nio-8080-exec-5] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, role_id, permission, add_time, update_time, deleted from litemall_permission WHERE ( role_id in ( ? ) and deleted = ? ) 
+2020-01-01 12:37:16,075 DEBUG [http-nio-8080-exec-5] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1(Integer), false(Boolean)
+2020-01-01 12:37:16,077 DEBUG [http-nio-8080-exec-5] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:37:16,085 DEBUG [http-nio-8080-exec-5] o.l.l.d.d.L.selectByExampleWithBLOBs_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (deleted = ?) 
+2020-01-01 12:37:16,090 DEBUG [http-nio-8080-exec-5] o.l.l.d.d.L.selectByExampleWithBLOBs_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean)
+2020-01-01 12:37:16,091 DEBUG [http-nio-8080-exec-5] o.l.l.d.d.L.selectByExampleWithBLOBs_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:37:16,094 DEBUG [http-nio-8080-exec-5] o.l.l.d.d.L.selectByExampleWithBLOBs [BaseJdbcLogger.java : 159] ==>  Preparing: select id, goods_sn, `name`, category_id, brand_id, gallery, keywords, brief, is_on_sale, sort_order, pic_url, share_url, is_new, is_hot, unit, counter_price, retail_price, add_time, update_time, deleted , detail from litemall_goods WHERE ( deleted = ? ) order by add_time desc LIMIT ? 
+2020-01-01 12:37:16,095 DEBUG [http-nio-8080-exec-5] o.l.l.d.d.L.selectByExampleWithBLOBs [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean), 20(Integer)
+2020-01-01 12:37:16,112 DEBUG [http-nio-8080-exec-5] o.l.l.d.d.L.selectByExampleWithBLOBs [BaseJdbcLogger.java : 159] <==      Total: 20
+2020-01-01 12:37:17,599 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select count(*) from litemall_user WHERE ( deleted = ? ) 
+2020-01-01 12:37:17,600 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean)
+2020-01-01 12:37:17,603 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:37:17,605 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select count(*) from litemall_goods WHERE ( deleted = ? ) 
+2020-01-01 12:37:17,606 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean)
+2020-01-01 12:37:17,608 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:37:17,610 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select count(*) from litemall_goods_product WHERE ( deleted = ? ) 
+2020-01-01 12:37:17,611 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean)
+2020-01-01 12:37:17,613 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:37:17,617 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select count(*) from litemall_order WHERE ( deleted = ? ) 
+2020-01-01 12:37:17,618 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean)
+2020-01-01 12:37:17,620 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:38:09,729 DEBUG [http-nio-8080-exec-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, `desc`, enabled, add_time, update_time, deleted from litemall_role WHERE ( id in ( ? ) and enabled = ? and deleted = ? ) 
+2020-01-01 12:38:09,730 DEBUG [http-nio-8080-exec-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1(Integer), true(Boolean), false(Boolean)
+2020-01-01 12:38:09,732 DEBUG [http-nio-8080-exec-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:38:09,734 DEBUG [http-nio-8080-exec-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, role_id, permission, add_time, update_time, deleted from litemall_permission WHERE ( role_id in ( ? ) and deleted = ? ) 
+2020-01-01 12:38:09,735 DEBUG [http-nio-8080-exec-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1(Integer), false(Boolean)
+2020-01-01 12:38:09,737 DEBUG [http-nio-8080-exec-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:38:09,767 DEBUG [http-nio-8080-exec-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, `desc`, enabled, add_time, update_time, deleted from litemall_role WHERE ( id in ( ? ) and enabled = ? and deleted = ? ) 
+2020-01-01 12:38:09,768 DEBUG [http-nio-8080-exec-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1(Integer), true(Boolean), false(Boolean)
+2020-01-01 12:38:09,769 DEBUG [http-nio-8080-exec-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:38:09,773 DEBUG [http-nio-8080-exec-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, role_id, permission, add_time, update_time, deleted from litemall_permission WHERE ( role_id in ( ? ) and deleted = ? ) 
+2020-01-01 12:38:09,774 DEBUG [http-nio-8080-exec-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1(Integer), false(Boolean)
+2020-01-01 12:38:09,776 DEBUG [http-nio-8080-exec-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:38:09,798 DEBUG [http-nio-8080-exec-9] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_address WHERE (deleted = ?) 
+2020-01-01 12:38:09,799 DEBUG [http-nio-8080-exec-9] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean)
+2020-01-01 12:38:09,802 DEBUG [http-nio-8080-exec-9] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:38:11,841 DEBUG [http-nio-8080-exec-3] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, `desc`, enabled, add_time, update_time, deleted from litemall_role WHERE ( id in ( ? ) and enabled = ? and deleted = ? ) 
+2020-01-01 12:38:11,842 DEBUG [http-nio-8080-exec-3] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1(Integer), true(Boolean), false(Boolean)
+2020-01-01 12:38:11,844 DEBUG [http-nio-8080-exec-3] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:38:11,847 DEBUG [http-nio-8080-exec-3] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, role_id, permission, add_time, update_time, deleted from litemall_permission WHERE ( role_id in ( ? ) and deleted = ? ) 
+2020-01-01 12:38:11,848 DEBUG [http-nio-8080-exec-3] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1(Integer), false(Boolean)
+2020-01-01 12:38:11,850 DEBUG [http-nio-8080-exec-3] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:38:11,861 DEBUG [http-nio-8080-exec-3] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, `desc`, enabled, add_time, update_time, deleted from litemall_role WHERE ( id in ( ? ) and enabled = ? and deleted = ? ) 
+2020-01-01 12:38:11,863 DEBUG [http-nio-8080-exec-3] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1(Integer), true(Boolean), false(Boolean)
+2020-01-01 12:38:11,865 DEBUG [http-nio-8080-exec-3] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:38:11,868 DEBUG [http-nio-8080-exec-3] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, role_id, permission, add_time, update_time, deleted from litemall_permission WHERE ( role_id in ( ? ) and deleted = ? ) 
+2020-01-01 12:38:11,868 DEBUG [http-nio-8080-exec-3] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1(Integer), false(Boolean)
+2020-01-01 12:38:11,870 DEBUG [http-nio-8080-exec-3] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:38:11,895 DEBUG [http-nio-8080-exec-3] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_search_history WHERE (deleted = ?) 
+2020-01-01 12:38:11,897 DEBUG [http-nio-8080-exec-3] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean)
+2020-01-01 12:38:11,900 DEBUG [http-nio-8080-exec-3] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:38:13,569 DEBUG [http-nio-8080-exec-4] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, `desc`, enabled, add_time, update_time, deleted from litemall_role WHERE ( id in ( ? ) and enabled = ? and deleted = ? ) 
+2020-01-01 12:38:13,570 DEBUG [http-nio-8080-exec-4] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1(Integer), true(Boolean), false(Boolean)
+2020-01-01 12:38:13,573 DEBUG [http-nio-8080-exec-4] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:38:13,575 DEBUG [http-nio-8080-exec-4] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, role_id, permission, add_time, update_time, deleted from litemall_permission WHERE ( role_id in ( ? ) and deleted = ? ) 
+2020-01-01 12:38:13,576 DEBUG [http-nio-8080-exec-4] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1(Integer), false(Boolean)
+2020-01-01 12:38:13,578 DEBUG [http-nio-8080-exec-4] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:38:13,610 DEBUG [http-nio-8080-exec-4] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, `desc`, enabled, add_time, update_time, deleted from litemall_role WHERE ( id in ( ? ) and enabled = ? and deleted = ? ) 
+2020-01-01 12:38:13,611 DEBUG [http-nio-8080-exec-4] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1(Integer), true(Boolean), false(Boolean)
+2020-01-01 12:38:13,612 DEBUG [http-nio-8080-exec-4] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:38:13,615 DEBUG [http-nio-8080-exec-4] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, role_id, permission, add_time, update_time, deleted from litemall_permission WHERE ( role_id in ( ? ) and deleted = ? ) 
+2020-01-01 12:38:13,616 DEBUG [http-nio-8080-exec-4] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1(Integer), false(Boolean)
+2020-01-01 12:38:13,617 DEBUG [http-nio-8080-exec-4] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:38:13,645 DEBUG [http-nio-8080-exec-4] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_feedback WHERE (deleted = ?) 
+2020-01-01 12:38:13,646 DEBUG [http-nio-8080-exec-4] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean)
+2020-01-01 12:38:13,650 DEBUG [http-nio-8080-exec-4] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:38:18,483 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, `desc`, enabled, add_time, update_time, deleted from litemall_role WHERE ( id in ( ? ) and enabled = ? and deleted = ? ) 
+2020-01-01 12:38:18,484 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1(Integer), true(Boolean), false(Boolean)
+2020-01-01 12:38:18,485 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:38:18,489 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, role_id, permission, add_time, update_time, deleted from litemall_permission WHERE ( role_id in ( ? ) and deleted = ? ) 
+2020-01-01 12:38:18,490 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1(Integer), false(Boolean)
+2020-01-01 12:38:18,491 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:38:18,510 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, `desc`, enabled, add_time, update_time, deleted from litemall_role WHERE ( id in ( ? ) and enabled = ? and deleted = ? ) 
+2020-01-01 12:38:18,511 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1(Integer), true(Boolean), false(Boolean)
+2020-01-01 12:38:18,512 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:38:18,514 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, role_id, permission, add_time, update_time, deleted from litemall_permission WHERE ( role_id in ( ? ) and deleted = ? ) 
+2020-01-01 12:38:18,515 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1(Integer), false(Boolean)
+2020-01-01 12:38:18,516 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:38:18,543 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_comment WHERE (`type` <> ? AND deleted = ?) 
+2020-01-01 12:38:18,545 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 2(Byte), false(Boolean)
+2020-01-01 12:38:18,554 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:38:18,556 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, value_id, `type`, content, user_id, has_picture, pic_urls, star, add_time, update_time, deleted from litemall_comment WHERE ( `type` <> ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-01-01 12:38:18,558 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 2(Byte), false(Boolean), 20(Integer)
+2020-01-01 12:38:18,568 DEBUG [http-nio-8080-exec-6] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 20
+2020-01-01 12:38:36,984 DEBUG [http-nio-8080-exec-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, `desc`, enabled, add_time, update_time, deleted from litemall_role WHERE ( id in ( ? ) and enabled = ? and deleted = ? ) 
+2020-01-01 12:38:36,985 DEBUG [http-nio-8080-exec-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1(Integer), true(Boolean), false(Boolean)
+2020-01-01 12:38:36,987 DEBUG [http-nio-8080-exec-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:38:36,989 DEBUG [http-nio-8080-exec-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, role_id, permission, add_time, update_time, deleted from litemall_permission WHERE ( role_id in ( ? ) and deleted = ? ) 
+2020-01-01 12:38:36,989 DEBUG [http-nio-8080-exec-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1(Integer), false(Boolean)
+2020-01-01 12:38:36,991 DEBUG [http-nio-8080-exec-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:38:37,018 DEBUG [http-nio-8080-exec-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, `desc`, enabled, add_time, update_time, deleted from litemall_role WHERE ( id in ( ? ) and enabled = ? and deleted = ? ) 
+2020-01-01 12:38:37,019 DEBUG [http-nio-8080-exec-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1(Integer), true(Boolean), false(Boolean)
+2020-01-01 12:38:37,020 DEBUG [http-nio-8080-exec-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:38:37,022 DEBUG [http-nio-8080-exec-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, role_id, permission, add_time, update_time, deleted from litemall_permission WHERE ( role_id in ( ? ) and deleted = ? ) 
+2020-01-01 12:38:37,023 DEBUG [http-nio-8080-exec-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1(Integer), false(Boolean)
+2020-01-01 12:38:37,026 DEBUG [http-nio-8080-exec-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:38:37,051 DEBUG [http-nio-8080-exec-9] o.l.l.d.d.L.selectByPrimaryKey [BaseJdbcLogger.java : 159] ==>  Preparing: select id, value_id, `type`, content, user_id, has_picture, pic_urls, star, add_time, update_time, deleted from litemall_comment where id = ? 
+2020-01-01 12:38:37,054 DEBUG [http-nio-8080-exec-9] o.l.l.d.d.L.selectByPrimaryKey [BaseJdbcLogger.java : 159] ==> Parameters: 1011(Integer)
+2020-01-01 12:38:37,057 DEBUG [http-nio-8080-exec-9] o.l.l.d.d.L.selectByPrimaryKey [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:40:57,786 DEBUG [pool-4-thread-8] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_groupon_rules WHERE (`status` = ? AND deleted = ?) 
+2020-01-01 12:40:57,778 DEBUG [http-nio-8080-exec-3] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select count(*) from litemall_goods WHERE ( is_on_sale = ? and deleted = ? ) 
+2020-01-01 12:40:57,785 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_category WHERE (`level` = ? AND `name` <> ? AND deleted = ?) 
+2020-01-01 12:40:57,820 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: L1(String), 推荐(String), false(Boolean)
+2020-01-01 12:40:57,827 DEBUG [pool-4-thread-8] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), false(Boolean)
+2020-01-01 12:40:57,831 DEBUG [pool-4-thread-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, link, url, `position`, content, start_time, end_time, enabled, add_time, update_time, deleted from litemall_ad WHERE ( `position` = ? and deleted = ? and enabled = ? ) 
+2020-01-01 12:40:57,839 DEBUG [pool-4-thread-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1(Byte), false(Boolean), true(Boolean)
+2020-01-01 12:40:57,836 DEBUG [http-nio-8080-exec-3] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), false(Boolean)
+2020-01-01 12:40:57,871 DEBUG [pool-4-thread-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 3
+2020-01-01 12:40:57,872 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:40:57,872 DEBUG [pool-4-thread-7] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_topic WHERE (deleted = ?) 
+2020-01-01 12:40:57,872 DEBUG [pool-4-thread-8] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:40:57,877 DEBUG [pool-4-thread-7] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean)
+2020-01-01 12:40:57,880 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( `level` = ? and `name` <> ? and deleted = ? ) LIMIT ? 
+2020-01-01 12:40:57,880 DEBUG [pool-4-thread-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, goods_id, goods_name, pic_url, discount, discount_member, expire_time, `status`, add_time, update_time, deleted from litemall_groupon_rules WHERE ( `status` = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-01-01 12:40:57,882 DEBUG [pool-4-thread-7] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:40:57,883 DEBUG [pool-4-thread-7] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , title , subtitle , price , pic_url , read_count from litemall_topic WHERE ( deleted = ? ) order by add_time desc LIMIT ? 
+2020-01-01 12:40:57,883 DEBUG [pool-4-thread-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), false(Boolean), 5(Integer)
+2020-01-01 12:40:57,885 DEBUG [pool-4-thread-7] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean), 4(Integer)
+2020-01-01 12:40:57,886 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: L1(String), 推荐(String), false(Boolean), 4(Integer)
+2020-01-01 12:40:57,888 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 4
+2020-01-01 12:40:57,889 DEBUG [pool-4-thread-7] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 4
+2020-01-01 12:40:57,891 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( pid = ? and deleted = ? ) 
+2020-01-01 12:40:57,891 DEBUG [pool-4-thread-6] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_brand WHERE (deleted = ?) 
+2020-01-01 12:40:57,891 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1005000(Integer), false(Boolean)
+2020-01-01 12:40:57,892 DEBUG [pool-4-thread-6] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean)
+2020-01-01 12:40:57,895 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 10
+2020-01-01 12:40:57,895 DEBUG [pool-4-thread-6] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:40:57,896 DEBUG [pool-4-thread-6] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , `desc` , pic_url , floor_price from litemall_brand WHERE ( deleted = ? ) LIMIT ? 
+2020-01-01 12:40:57,897 DEBUG [pool-4-thread-6] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean), 4(Integer)
+2020-01-01 12:40:57,899 DEBUG [pool-4-thread-6] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 4
+2020-01-01 12:40:57,895 DEBUG [pool-4-thread-3] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_coupon WHERE (`type` = ? AND `status` = ? AND deleted = ?) 
+2020-01-01 12:40:57,901 DEBUG [pool-4-thread-2] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , icon_url from litemall_category WHERE ( `level` = ? and deleted = ? ) 
+2020-01-01 12:40:57,904 DEBUG [pool-4-thread-5] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (is_hot = ? AND is_on_sale = ? AND deleted = ?) 
+2020-01-01 12:40:57,904 DEBUG [http-nio-8080-exec-3] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:40:57,907 DEBUG [pool-4-thread-3] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), 0(Short), false(Boolean)
+2020-01-01 12:40:57,908 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (category_id IN (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) AND is_on_sale = ? AND deleted = ?) 
+2020-01-01 12:40:57,910 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 1008002(Integer), 1008008(Integer), 1008009(Integer), 1008016(Integer), 1010003(Integer), 1011003(Integer), 1011004(Integer), 1015000(Integer), 1017000(Integer), 1036000(Integer), true(Boolean), false(Boolean)
+2020-01-01 12:40:57,913 DEBUG [pool-4-thread-3] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:40:57,913 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:40:57,914 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , brief , pic_url , is_hot , is_new , counter_price , retail_price from litemall_goods WHERE ( category_id in ( ? , ? , ? , ? , ? , ? , ? , ? , ? , ? ) and is_on_sale = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-01-01 12:40:57,916 DEBUG [pool-4-thread-3] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , `desc` , tag , `days` , start_time , end_time , discount , `min` from litemall_coupon WHERE ( `type` = ? and `status` = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-01-01 12:40:57,918 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: 1008002(Integer), 1008008(Integer), 1008009(Integer), 1008016(Integer), 1010003(Integer), 1011003(Integer), 1011004(Integer), 1015000(Integer), 1017000(Integer), 1036000(Integer), true(Boolean), false(Boolean), 4(Integer)
+2020-01-01 12:40:57,918 DEBUG [pool-4-thread-3] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), 0(Short), false(Boolean), 3(Integer)
+2020-01-01 12:40:57,920 DEBUG [pool-4-thread-3] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 2
+2020-01-01 12:40:57,920 DEBUG [pool-4-thread-2] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: L1(String), false(Boolean)
+2020-01-01 12:40:57,907 DEBUG [pool-4-thread-5] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), true(Boolean), false(Boolean)
+2020-01-01 12:40:57,923 DEBUG [pool-4-thread-5] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:40:57,924 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 4
+2020-01-01 12:40:57,924 DEBUG [pool-4-thread-5] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , brief , pic_url , is_hot , is_new , counter_price , retail_price from litemall_goods WHERE ( is_hot = ? and is_on_sale = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-01-01 12:40:57,928 DEBUG [pool-4-thread-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:40:57,928 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( pid = ? and deleted = ? ) 
+2020-01-01 12:40:57,930 DEBUG [pool-4-thread-5] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), true(Boolean), false(Boolean), 6(Integer)
+2020-01-01 12:40:57,930 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1005001(Integer), false(Boolean)
+2020-01-01 12:40:57,932 DEBUG [pool-4-thread-5] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 6
+2020-01-01 12:40:57,933 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 9
+2020-01-01 12:40:57,932 DEBUG [pool-4-thread-8] o.l.l.d.d.L.selectOneByExampleWithBLOBs [BaseJdbcLogger.java : 159] ==>  Preparing: select id, goods_sn, `name`, category_id, brand_id, gallery, keywords, brief, is_on_sale, sort_order, pic_url, share_url, is_new, is_hot, unit, counter_price, retail_price, add_time, update_time, deleted , detail from litemall_goods WHERE ( id = ? and deleted = ? ) limit 1 
+2020-01-01 12:40:57,934 DEBUG [pool-4-thread-8] o.l.l.d.d.L.selectOneByExampleWithBLOBs [BaseJdbcLogger.java : 159] ==> Parameters: 1110016(Integer), false(Boolean)
+2020-01-01 12:40:57,925 DEBUG [pool-4-thread-2] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 9
+2020-01-01 12:40:57,938 DEBUG [pool-4-thread-8] o.l.l.d.d.L.selectOneByExampleWithBLOBs [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:40:57,948 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (category_id IN (?, ?, ?, ?, ?, ?, ?, ?, ?) AND is_on_sale = ? AND deleted = ?) 
+2020-01-01 12:40:57,950 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 1005007(Integer), 1005008(Integer), 1005009(Integer), 1007000(Integer), 1008011(Integer), 1008012(Integer), 1008013(Integer), 1013005(Integer), 1023000(Integer), true(Boolean), false(Boolean)
+2020-01-01 12:40:57,952 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:40:57,953 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , brief , pic_url , is_hot , is_new , counter_price , retail_price from litemall_goods WHERE ( category_id in ( ? , ? , ? , ? , ? , ? , ? , ? , ? ) and is_on_sale = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-01-01 12:40:57,955 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: 1005007(Integer), 1005008(Integer), 1005009(Integer), 1007000(Integer), 1008011(Integer), 1008012(Integer), 1008013(Integer), 1013005(Integer), 1023000(Integer), true(Boolean), false(Boolean), 4(Integer)
+2020-01-01 12:40:57,956 DEBUG [pool-4-thread-4] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (is_new = ? AND is_on_sale = ? AND deleted = ?) 
+2020-01-01 12:40:57,956 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 4
+2020-01-01 12:40:57,957 DEBUG [pool-4-thread-4] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), true(Boolean), false(Boolean)
+2020-01-01 12:40:57,958 DEBUG [pool-4-thread-4] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:40:57,959 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( pid = ? and deleted = ? ) 
+2020-01-01 12:40:57,959 DEBUG [pool-4-thread-4] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , brief , pic_url , is_hot , is_new , counter_price , retail_price from litemall_goods WHERE ( is_new = ? and is_on_sale = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-01-01 12:40:57,959 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1005002(Integer), false(Boolean)
+2020-01-01 12:40:57,961 DEBUG [pool-4-thread-4] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), true(Boolean), false(Boolean), 6(Integer)
+2020-01-01 12:40:57,962 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 10
+2020-01-01 12:40:57,966 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (category_id IN (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) AND is_on_sale = ? AND deleted = ?) 
+2020-01-01 12:40:57,967 DEBUG [pool-4-thread-4] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 6
+2020-01-01 12:40:57,968 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 1005010(Integer), 1005011(Integer), 1005012(Integer), 1005013(Integer), 1008014(Integer), 1008015(Integer), 1027000(Integer), 1027001(Integer), 1035003(Integer), 1036003(Integer), true(Boolean), false(Boolean)
+2020-01-01 12:40:57,969 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:40:57,970 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , brief , pic_url , is_hot , is_new , counter_price , retail_price from litemall_goods WHERE ( category_id in ( ? , ? , ? , ? , ? , ? , ? , ? , ? , ? ) and is_on_sale = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-01-01 12:40:57,972 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: 1005010(Integer), 1005011(Integer), 1005012(Integer), 1005013(Integer), 1008014(Integer), 1008015(Integer), 1027000(Integer), 1027001(Integer), 1035003(Integer), 1036003(Integer), true(Boolean), false(Boolean), 4(Integer)
+2020-01-01 12:40:57,975 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 4
+2020-01-01 12:40:57,978 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( pid = ? and deleted = ? ) 
+2020-01-01 12:40:57,978 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1008000(Integer), false(Boolean)
+2020-01-01 12:40:57,980 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 9
+2020-01-01 12:40:57,985 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (category_id IN (?, ?, ?, ?, ?, ?, ?, ?, ?) AND is_on_sale = ? AND deleted = ?) 
+2020-01-01 12:40:57,986 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 1008003(Integer), 1008007(Integer), 1008010(Integer), 1008018(Integer), 1010004(Integer), 1012001(Integer), 1013000(Integer), 1020008(Integer), 1022000(Integer), true(Boolean), false(Boolean)
+2020-01-01 12:40:57,987 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 12:40:57,988 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , brief , pic_url , is_hot , is_new , counter_price , retail_price from litemall_goods WHERE ( category_id in ( ? , ? , ? , ? , ? , ? , ? , ? , ? ) and is_on_sale = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-01-01 12:40:57,989 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: 1008003(Integer), 1008007(Integer), 1008010(Integer), 1008018(Integer), 1010004(Integer), 1012001(Integer), 1013000(Integer), 1020008(Integer), 1022000(Integer), true(Boolean), false(Boolean), 4(Integer)
+2020-01-01 12:40:57,992 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 4
+2020-01-01 12:41:18,838 ERROR [http-nio-8080-exec-5] c.b.w.m.api.impl.WxMaServiceImpl [WxMaServiceImpl.java : 257] 
+【请求地址】: https://api.weixin.qq.com/sns/jscode2session?access_token=28_O6zVCgrCUVeJEAqjtTQ0okdxP6mlKMbboPQ-QP5W1Pq6IvdBrf6eiM9VqiGP-xFK4n3GUwZzx3OmdSopLP4ZtCNl_efFujLWzjuECbVxZiePTFlDVvI-XbZlKVjrAbatZ-t605mVTpN3FYHFVSKfAFAAXP
+【请求参数】：js_code=043Xf30G1G3Uk60Y7L1G1gYYZF1Xf30o&secret=******&grant_type=authorization_code&appid=wxa5b486c6b918ecfb
+【错误信息】：{"errcode":40029,"errmsg":"invalid code, hints: [ req_id: uFaau7aLRa-AG ]"}
+2020-01-01 13:35:24,546 INFO [scheduling-1] o.l.litemall.admin.job.CouponJob [CouponJob.java : 36] 系统开启任务检查优惠券是否已经过期
+2020-01-01 13:35:24,687 DEBUG [scheduling-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, `desc`, tag, total, discount, `min`, `limit`, `type`, `status`, goods_type, goods_value, code, time_type, `days`, start_time, end_time, add_time, update_time, deleted from litemall_coupon WHERE ( `status` = ? and time_type = ? and end_time < ? and deleted = ? ) 
+2020-01-01 13:35:24,726 DEBUG [scheduling-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), 1(Short), 2020-01-01 13:35:24.587(Timestamp), false(Boolean)
+2020-01-01 13:35:24,769 DEBUG [scheduling-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 0
+2020-01-01 13:35:24,782 DEBUG [scheduling-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, user_id, coupon_id, `status`, used_time, start_time, end_time, order_id, add_time, update_time, deleted from litemall_coupon_user WHERE ( `status` = ? and end_time < ? and deleted = ? ) 
+2020-01-01 13:35:24,784 DEBUG [scheduling-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), 2020-01-01 13:35:24.778(Timestamp), false(Boolean)
+2020-01-01 13:35:24,786 DEBUG [scheduling-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 0
+2020-01-01 14:07:05,822 DEBUG [pool-5-thread-2] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , icon_url from litemall_category WHERE ( `level` = ? and deleted = ? ) 
+2020-01-01 14:07:05,827 DEBUG [pool-5-thread-6] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_brand WHERE (deleted = ?) 
+2020-01-01 14:07:05,822 DEBUG [pool-5-thread-4] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (is_new = ? AND is_on_sale = ? AND deleted = ?) 
+2020-01-01 14:07:05,827 DEBUG [pool-5-thread-5] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (is_hot = ? AND is_on_sale = ? AND deleted = ?) 
+2020-01-01 14:07:05,830 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_category WHERE (`level` = ? AND `name` <> ? AND deleted = ?) 
+2020-01-01 14:07:05,830 DEBUG [pool-5-thread-8] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_groupon_rules WHERE (`status` = ? AND deleted = ?) 
+2020-01-01 14:07:05,822 DEBUG [pool-5-thread-7] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_topic WHERE (deleted = ?) 
+2020-01-01 14:07:05,827 DEBUG [http-nio-8080-exec-7] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select count(*) from litemall_goods WHERE ( is_on_sale = ? and deleted = ? ) 
+2020-01-01 14:07:05,846 DEBUG [pool-5-thread-2] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: L1(String), false(Boolean)
+2020-01-01 14:07:05,846 DEBUG [http-nio-8080-exec-7] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), false(Boolean)
+2020-01-01 14:07:05,846 DEBUG [pool-5-thread-7] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean)
+2020-01-01 14:07:05,833 DEBUG [pool-5-thread-3] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_coupon WHERE (`type` = ? AND `status` = ? AND deleted = ?) 
+2020-01-01 14:07:05,848 DEBUG [pool-5-thread-6] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean)
+2020-01-01 14:07:05,822 DEBUG [pool-5-thread-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, link, url, `position`, content, start_time, end_time, enabled, add_time, update_time, deleted from litemall_ad WHERE ( `position` = ? and deleted = ? and enabled = ? ) 
+2020-01-01 14:07:05,851 DEBUG [pool-5-thread-4] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), true(Boolean), false(Boolean)
+2020-01-01 14:07:05,851 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: L1(String), 推荐(String), false(Boolean)
+2020-01-01 14:07:05,858 DEBUG [pool-5-thread-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1(Byte), false(Boolean), true(Boolean)
+2020-01-01 14:07:05,858 DEBUG [pool-5-thread-5] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), true(Boolean), false(Boolean)
+2020-01-01 14:07:05,860 DEBUG [pool-5-thread-3] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), 0(Short), false(Boolean)
+2020-01-01 14:07:05,862 DEBUG [pool-5-thread-8] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), false(Boolean)
+2020-01-01 14:07:05,885 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 14:07:05,885 DEBUG [pool-5-thread-6] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 14:07:05,886 DEBUG [http-nio-8080-exec-7] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 14:07:05,890 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( `level` = ? and `name` <> ? and deleted = ? ) LIMIT ? 
+2020-01-01 14:07:05,891 DEBUG [pool-5-thread-3] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 14:07:05,892 DEBUG [pool-5-thread-4] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 14:07:05,892 DEBUG [pool-5-thread-6] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , `desc` , pic_url , floor_price from litemall_brand WHERE ( deleted = ? ) LIMIT ? 
+2020-01-01 14:07:05,892 DEBUG [pool-5-thread-3] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , `desc` , tag , `days` , start_time , end_time , discount , `min` from litemall_coupon WHERE ( `type` = ? and `status` = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-01-01 14:07:05,893 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: L1(String), 推荐(String), false(Boolean), 4(Integer)
+2020-01-01 14:07:06,018 DEBUG [pool-5-thread-3] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), 0(Short), false(Boolean), 3(Integer)
+2020-01-01 14:07:06,018 DEBUG [pool-5-thread-6] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean), 4(Integer)
+2020-01-01 14:07:05,893 DEBUG [pool-5-thread-7] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 14:07:05,895 DEBUG [pool-5-thread-2] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 9
+2020-01-01 14:07:06,020 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 4
+2020-01-01 14:07:05,893 DEBUG [pool-5-thread-4] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , brief , pic_url , is_hot , is_new , counter_price , retail_price from litemall_goods WHERE ( is_new = ? and is_on_sale = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-01-01 14:07:06,020 DEBUG [pool-5-thread-7] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , title , subtitle , price , pic_url , read_count from litemall_topic WHERE ( deleted = ? ) order by add_time desc LIMIT ? 
+2020-01-01 14:07:05,896 DEBUG [pool-5-thread-5] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 14:07:06,022 DEBUG [pool-5-thread-3] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 2
+2020-01-01 14:07:06,022 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( pid = ? and deleted = ? ) 
+2020-01-01 14:07:06,022 DEBUG [pool-5-thread-5] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , brief , pic_url , is_hot , is_new , counter_price , retail_price from litemall_goods WHERE ( is_hot = ? and is_on_sale = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-01-01 14:07:06,023 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1005000(Integer), false(Boolean)
+2020-01-01 14:07:06,023 DEBUG [pool-5-thread-5] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), true(Boolean), false(Boolean), 6(Integer)
+2020-01-01 14:07:06,022 DEBUG [pool-5-thread-6] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 4
+2020-01-01 14:07:05,902 DEBUG [pool-5-thread-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 3
+2020-01-01 14:07:05,897 DEBUG [pool-5-thread-8] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 14:07:06,024 DEBUG [pool-5-thread-7] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean), 4(Integer)
+2020-01-01 14:07:06,025 DEBUG [pool-5-thread-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, goods_id, goods_name, pic_url, discount, discount_member, expire_time, `status`, add_time, update_time, deleted from litemall_groupon_rules WHERE ( `status` = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-01-01 14:07:06,026 DEBUG [pool-5-thread-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), false(Boolean), 5(Integer)
+2020-01-01 14:07:06,026 DEBUG [pool-5-thread-7] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 4
+2020-01-01 14:07:06,027 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 10
+2020-01-01 14:07:06,032 DEBUG [pool-5-thread-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 14:07:06,033 DEBUG [pool-5-thread-4] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), true(Boolean), false(Boolean), 6(Integer)
+2020-01-01 14:07:06,035 DEBUG [pool-5-thread-5] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 6
+2020-01-01 14:07:06,036 DEBUG [pool-5-thread-4] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 6
+2020-01-01 14:07:06,053 DEBUG [pool-5-thread-8] o.l.l.d.d.L.selectOneByExampleWithBLOBs [BaseJdbcLogger.java : 159] ==>  Preparing: select id, goods_sn, `name`, category_id, brand_id, gallery, keywords, brief, is_on_sale, sort_order, pic_url, share_url, is_new, is_hot, unit, counter_price, retail_price, add_time, update_time, deleted , detail from litemall_goods WHERE ( id = ? and deleted = ? ) limit 1 
+2020-01-01 14:07:06,055 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (category_id IN (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) AND is_on_sale = ? AND deleted = ?) 
+2020-01-01 14:07:06,063 DEBUG [pool-5-thread-8] o.l.l.d.d.L.selectOneByExampleWithBLOBs [BaseJdbcLogger.java : 159] ==> Parameters: 1110016(Integer), false(Boolean)
+2020-01-01 14:07:06,063 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 1008002(Integer), 1008008(Integer), 1008009(Integer), 1008016(Integer), 1010003(Integer), 1011003(Integer), 1011004(Integer), 1015000(Integer), 1017000(Integer), 1036000(Integer), true(Boolean), false(Boolean)
+2020-01-01 14:07:06,066 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 14:07:06,067 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , brief , pic_url , is_hot , is_new , counter_price , retail_price from litemall_goods WHERE ( category_id in ( ? , ? , ? , ? , ? , ? , ? , ? , ? , ? ) and is_on_sale = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-01-01 14:07:06,069 DEBUG [pool-5-thread-8] o.l.l.d.d.L.selectOneByExampleWithBLOBs [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 14:07:06,069 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: 1008002(Integer), 1008008(Integer), 1008009(Integer), 1008016(Integer), 1010003(Integer), 1011003(Integer), 1011004(Integer), 1015000(Integer), 1017000(Integer), 1036000(Integer), true(Boolean), false(Boolean), 4(Integer)
+2020-01-01 14:07:06,074 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 4
+2020-01-01 14:07:06,076 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( pid = ? and deleted = ? ) 
+2020-01-01 14:07:06,077 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1005001(Integer), false(Boolean)
+2020-01-01 14:07:06,080 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 9
+2020-01-01 14:07:06,084 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (category_id IN (?, ?, ?, ?, ?, ?, ?, ?, ?) AND is_on_sale = ? AND deleted = ?) 
+2020-01-01 14:07:06,085 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 1005007(Integer), 1005008(Integer), 1005009(Integer), 1007000(Integer), 1008011(Integer), 1008012(Integer), 1008013(Integer), 1013005(Integer), 1023000(Integer), true(Boolean), false(Boolean)
+2020-01-01 14:07:06,090 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 14:07:06,091 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , brief , pic_url , is_hot , is_new , counter_price , retail_price from litemall_goods WHERE ( category_id in ( ? , ? , ? , ? , ? , ? , ? , ? , ? ) and is_on_sale = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-01-01 14:07:06,093 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: 1005007(Integer), 1005008(Integer), 1005009(Integer), 1007000(Integer), 1008011(Integer), 1008012(Integer), 1008013(Integer), 1013005(Integer), 1023000(Integer), true(Boolean), false(Boolean), 4(Integer)
+2020-01-01 14:07:06,095 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 4
+2020-01-01 14:07:06,098 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( pid = ? and deleted = ? ) 
+2020-01-01 14:07:06,098 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1005002(Integer), false(Boolean)
+2020-01-01 14:07:06,100 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 10
+2020-01-01 14:07:06,105 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (category_id IN (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) AND is_on_sale = ? AND deleted = ?) 
+2020-01-01 14:07:06,105 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 1005010(Integer), 1005011(Integer), 1005012(Integer), 1005013(Integer), 1008014(Integer), 1008015(Integer), 1027000(Integer), 1027001(Integer), 1035003(Integer), 1036003(Integer), true(Boolean), false(Boolean)
+2020-01-01 14:07:06,107 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 14:07:06,108 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , brief , pic_url , is_hot , is_new , counter_price , retail_price from litemall_goods WHERE ( category_id in ( ? , ? , ? , ? , ? , ? , ? , ? , ? , ? ) and is_on_sale = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-01-01 14:07:06,109 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: 1005010(Integer), 1005011(Integer), 1005012(Integer), 1005013(Integer), 1008014(Integer), 1008015(Integer), 1027000(Integer), 1027001(Integer), 1035003(Integer), 1036003(Integer), true(Boolean), false(Boolean), 4(Integer)
+2020-01-01 14:07:06,111 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 4
+2020-01-01 14:07:06,114 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( pid = ? and deleted = ? ) 
+2020-01-01 14:07:06,114 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1008000(Integer), false(Boolean)
+2020-01-01 14:07:06,117 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 9
+2020-01-01 14:07:06,122 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (category_id IN (?, ?, ?, ?, ?, ?, ?, ?, ?) AND is_on_sale = ? AND deleted = ?) 
+2020-01-01 14:07:06,123 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 1008003(Integer), 1008007(Integer), 1008010(Integer), 1008018(Integer), 1010004(Integer), 1012001(Integer), 1013000(Integer), 1020008(Integer), 1022000(Integer), true(Boolean), false(Boolean)
+2020-01-01 14:07:06,124 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 14:07:06,125 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , brief , pic_url , is_hot , is_new , counter_price , retail_price from litemall_goods WHERE ( category_id in ( ? , ? , ? , ? , ? , ? , ? , ? , ? ) and is_on_sale = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-01-01 14:07:06,126 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: 1008003(Integer), 1008007(Integer), 1008010(Integer), 1008018(Integer), 1010004(Integer), 1012001(Integer), 1013000(Integer), 1020008(Integer), 1022000(Integer), true(Boolean), false(Boolean), 4(Integer)
+2020-01-01 14:07:06,129 DEBUG [pool-5-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 4
+2020-01-01 14:10:48,981 INFO [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 50] Starting Application on LAPTOP-1DJL8JUI with PID 7000 (D:\MyCode\Java\litemall\litemall-all\target\classes started by 迎港 in D:\MyCode\Java\litemall)
+2020-01-01 14:10:48,985 DEBUG [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 53] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2020-01-01 14:10:48,986 INFO [restartedMain] org.linlinjava.litemall.Application [SpringApplication.java : 679] The following profiles are active: db,core,admin,wx
+2020-01-01 14:10:59,403 DEBUG [restartedMain] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, key_name, key_value, add_time, update_time, deleted from litemall_system WHERE ( deleted = ? ) 
+2020-01-01 14:10:59,591 DEBUG [restartedMain] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean)
+2020-01-01 14:10:59,645 DEBUG [restartedMain] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 18
+2020-01-01 14:10:59,652 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 42] ===========================================================================================================================================================================================================
+2020-01-01 14:10:59,652 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 43] 
+2020-01-01 14:10:59,652 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 44]               Litemall 初始化信息
+2020-01-01 14:10:59,652 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 45] 
+2020-01-01 14:10:59,653 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 67] 
+2020-01-01 14:10:59,653 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 68]     [[  系统信息  ]]
+2020-01-01 14:10:59,653 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 69] 
+2020-01-01 14:10:59,654 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     服务器端口        ->        8080
+2020-01-01 14:10:59,654 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     数据库USER        ->        root
+2020-01-01 14:10:59,654 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     数据库地址        ->        jdbc:mysql://localhost:3306/iitemmall?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&allowPublicKeyRetrieval=true&verifyServerCertificate=false&useSSL=false
+2020-01-01 14:10:59,654 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 67] 
+2020-01-01 14:10:59,654 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 68]     [[  模块状态  ]]
+2020-01-01 14:10:59,655 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 69] 
+2020-01-01 14:10:59,655 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     邮件        ->        false
+2020-01-01 14:10:59,655 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     短信        ->        false
+2020-01-01 14:10:59,655 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     模版消息        ->        false
+2020-01-01 14:10:59,656 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     快递信息        ->        false
+2020-01-01 14:10:59,656 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     快递鸟ID        ->        XXXXXXXXX
+2020-01-01 14:10:59,656 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     对象存储        ->        local
+2020-01-01 14:10:59,656 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     本地对象存储路径        ->        storage
+2020-01-01 14:10:59,656 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     本地对象访问地址        ->        http://localhost:8080/wx/storage/fetch/
+2020-01-01 14:10:59,657 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 67] 
+2020-01-01 14:10:59,657 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 68]     [[  微信相关  ]]
+2020-01-01 14:10:59,657 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 69] 
+2020-01-01 14:10:59,657 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     微信APP KEY        ->        wx1cd22d00f1fac673
+2020-01-01 14:10:59,657 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     微信APP-SECRET        ->        e04004829d4c383b4db7769d88dfbca1
+2020-01-01 14:10:59,657 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     微信支付MCH-ID        ->        111111
+2020-01-01 14:10:59,657 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     微信支付MCH-KEY        ->        xxxxxx
+2020-01-01 14:10:59,658 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     微信支付通知地址        ->        http://www.example.com/wx/order/pay-notify
+2020-01-01 14:10:59,658 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 67] 
+2020-01-01 14:10:59,658 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 68]     [[  系统设置  ]]
+2020-01-01 14:10:59,658 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 69] 
+2020-01-01 14:10:59,658 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     自动创建朋友圈分享图        ->        false
+2020-01-01 14:10:59,659 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     商场名称        ->        litemall
+2020-01-01 14:10:59,659 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 71]     首页显示记录数：NEW,HOT,BRAND,TOPIC,CatlogList,CatlogMore        ->        6,6,4,4,4,4
+2020-01-01 14:10:59,659 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 49]   
+2020-01-01 14:10:59,659 INFO [restartedMain] o.l.l.core.util.SystemInfoPrinter [SystemInfoPrinter.java : 50] ===========================================================================================================================================================================================================
+2020-01-01 14:11:04,832 INFO [scheduling-1] o.l.litemall.admin.job.CouponJob [CouponJob.java : 36] 系统开启任务检查优惠券是否已经过期
+2020-01-01 14:11:04,855 DEBUG [scheduling-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, `desc`, tag, total, discount, `min`, `limit`, `type`, `status`, goods_type, goods_value, code, time_type, `days`, start_time, end_time, add_time, update_time, deleted from litemall_coupon WHERE ( `status` = ? and time_type = ? and end_time < ? and deleted = ? ) 
+2020-01-01 14:11:04,862 DEBUG [scheduling-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), 1(Short), 2020-01-01 14:11:04.844(Timestamp), false(Boolean)
+2020-01-01 14:11:04,868 DEBUG [scheduling-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 0
+2020-01-01 14:11:04,880 DEBUG [scheduling-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, user_id, coupon_id, `status`, used_time, start_time, end_time, order_id, add_time, update_time, deleted from litemall_coupon_user WHERE ( `status` = ? and end_time < ? and deleted = ? ) 
+2020-01-01 14:11:04,883 DEBUG [scheduling-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), 2020-01-01 14:11:04.875(Timestamp), false(Boolean)
+2020-01-01 14:11:04,885 DEBUG [scheduling-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 0
+2020-01-01 14:11:06,113 INFO [restartedMain] org.linlinjava.litemall.Application [StartupInfoLogger.java : 59] Started Application in 19.083 seconds (JVM running for 23.686)
+2020-01-01 14:11:06,135 DEBUG [restartedMain] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, user_id, order_sn, order_status, consignee, mobile, address, message, goods_price, freight_price, coupon_price, integral_price, groupon_price, order_price, actual_price, pay_id, pay_time, ship_sn, ship_channel, ship_time, refund_amount, refund_type, refund_content, refund_time, confirm_time, comments, end_time, add_time, update_time, deleted from litemall_order WHERE ( order_status = ? and deleted = ? ) 
+2020-01-01 14:11:06,138 DEBUG [restartedMain] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 101(Short), false(Boolean)
+2020-01-01 14:11:06,141 DEBUG [restartedMain] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 0
+2020-01-01 14:11:06,156 DEBUG [restartedMain] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, goods_id, goods_name, pic_url, discount, discount_member, expire_time, `status`, add_time, update_time, deleted from litemall_groupon_rules WHERE ( `status` = ? and deleted = ? ) 
+2020-01-01 14:11:06,157 DEBUG [restartedMain] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), false(Boolean)
+2020-01-01 14:11:06,160 DEBUG [restartedMain] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 14:13:48,626 DEBUG [http-nio-8080-exec-4] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select count(*) from litemall_goods WHERE ( is_on_sale = ? and deleted = ? ) 
+2020-01-01 14:13:48,652 DEBUG [pool-4-thread-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, link, url, `position`, content, start_time, end_time, enabled, add_time, update_time, deleted from litemall_ad WHERE ( `position` = ? and deleted = ? and enabled = ? ) 
+2020-01-01 14:13:48,655 DEBUG [pool-4-thread-2] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , icon_url from litemall_category WHERE ( `level` = ? and deleted = ? ) 
+2020-01-01 14:13:48,674 DEBUG [pool-4-thread-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1(Byte), false(Boolean), true(Boolean)
+2020-01-01 14:13:48,674 DEBUG [http-nio-8080-exec-4] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), false(Boolean)
+2020-01-01 14:13:48,680 DEBUG [pool-4-thread-2] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: L1(String), false(Boolean)
+2020-01-01 14:13:48,714 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_category WHERE (`level` = ? AND `name` <> ? AND deleted = ?) 
+2020-01-01 14:13:48,714 DEBUG [pool-4-thread-7] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_topic WHERE (deleted = ?) 
+2020-01-01 14:13:48,717 DEBUG [pool-4-thread-2] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 9
+2020-01-01 14:13:48,717 DEBUG [pool-4-thread-6] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_brand WHERE (deleted = ?) 
+2020-01-01 14:13:48,719 DEBUG [pool-4-thread-3] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_coupon WHERE (`type` = ? AND `status` = ? AND deleted = ?) 
+2020-01-01 14:13:48,721 DEBUG [pool-4-thread-5] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (is_hot = ? AND is_on_sale = ? AND deleted = ?) 
+2020-01-01 14:13:48,720 DEBUG [pool-4-thread-4] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (is_new = ? AND is_on_sale = ? AND deleted = ?) 
+2020-01-01 14:13:48,721 DEBUG [pool-4-thread-8] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_groupon_rules WHERE (`status` = ? AND deleted = ?) 
+2020-01-01 14:13:48,723 DEBUG [http-nio-8080-exec-4] o.l.l.d.d.L.countByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 14:13:48,725 DEBUG [pool-4-thread-1] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 3
+2020-01-01 14:13:48,725 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: L1(String), 推荐(String), false(Boolean)
+2020-01-01 14:13:48,729 DEBUG [pool-4-thread-3] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), 0(Short), false(Boolean)
+2020-01-01 14:13:48,728 DEBUG [pool-4-thread-8] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), false(Boolean)
+2020-01-01 14:13:48,728 DEBUG [pool-4-thread-5] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), true(Boolean), false(Boolean)
+2020-01-01 14:13:48,729 DEBUG [pool-4-thread-6] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean)
+2020-01-01 14:13:48,730 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 14:13:48,731 DEBUG [pool-4-thread-5] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 14:13:48,731 DEBUG [pool-4-thread-8] o.l.l.d.d.L.selectByExample_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 14:13:48,732 DEBUG [pool-4-thread-3] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 14:13:48,735 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( `level` = ? and `name` <> ? and deleted = ? ) LIMIT ? 
+2020-01-01 14:13:48,735 DEBUG [pool-4-thread-7] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean)
+2020-01-01 14:13:48,726 DEBUG [pool-4-thread-4] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), true(Boolean), false(Boolean)
+2020-01-01 14:13:48,734 DEBUG [pool-4-thread-6] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 14:13:48,736 DEBUG [pool-4-thread-5] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , brief , pic_url , is_hot , is_new , counter_price , retail_price from litemall_goods WHERE ( is_hot = ? and is_on_sale = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-01-01 14:13:48,741 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: L1(String), 推荐(String), false(Boolean), 4(Integer)
+2020-01-01 14:13:48,739 DEBUG [pool-4-thread-6] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , `desc` , pic_url , floor_price from litemall_brand WHERE ( deleted = ? ) LIMIT ? 
+2020-01-01 14:13:48,738 DEBUG [pool-4-thread-7] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 14:13:48,737 DEBUG [pool-4-thread-3] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , `desc` , tag , `days` , start_time , end_time , discount , `min` from litemall_coupon WHERE ( `type` = ? and `status` = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-01-01 14:13:48,747 DEBUG [pool-4-thread-7] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , title , subtitle , price , pic_url , read_count from litemall_topic WHERE ( deleted = ? ) order by add_time desc LIMIT ? 
+2020-01-01 14:13:48,747 DEBUG [pool-4-thread-6] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean), 4(Integer)
+2020-01-01 14:13:48,738 DEBUG [pool-4-thread-4] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 14:13:48,748 DEBUG [pool-4-thread-3] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), 0(Short), false(Boolean), 3(Integer)
+2020-01-01 14:13:48,748 DEBUG [pool-4-thread-7] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: false(Boolean), 4(Integer)
+2020-01-01 14:13:48,737 DEBUG [pool-4-thread-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, goods_id, goods_name, pic_url, discount, discount_member, expire_time, `status`, add_time, update_time, deleted from litemall_groupon_rules WHERE ( `status` = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-01-01 14:13:48,750 DEBUG [pool-4-thread-4] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , brief , pic_url , is_hot , is_new , counter_price , retail_price from litemall_goods WHERE ( is_new = ? and is_on_sale = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-01-01 14:13:48,753 DEBUG [pool-4-thread-4] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), true(Boolean), false(Boolean), 6(Integer)
+2020-01-01 14:13:48,753 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 4
+2020-01-01 14:13:48,757 DEBUG [pool-4-thread-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 0(Short), false(Boolean), 5(Integer)
+2020-01-01 14:13:48,765 DEBUG [pool-4-thread-6] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 4
+2020-01-01 14:13:48,770 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( pid = ? and deleted = ? ) 
+2020-01-01 14:13:48,771 DEBUG [pool-4-thread-8] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 14:13:48,761 DEBUG [pool-4-thread-5] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: true(Boolean), true(Boolean), false(Boolean), 6(Integer)
+2020-01-01 14:13:48,772 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1005000(Integer), false(Boolean)
+2020-01-01 14:13:48,774 DEBUG [pool-4-thread-8] o.l.l.d.d.L.selectOneByExampleWithBLOBs [BaseJdbcLogger.java : 159] ==>  Preparing: select id, goods_sn, `name`, category_id, brand_id, gallery, keywords, brief, is_on_sale, sort_order, pic_url, share_url, is_new, is_hot, unit, counter_price, retail_price, add_time, update_time, deleted , detail from litemall_goods WHERE ( id = ? and deleted = ? ) limit 1 
+2020-01-01 14:13:48,766 DEBUG [pool-4-thread-7] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 4
+2020-01-01 14:13:48,777 DEBUG [pool-4-thread-8] o.l.l.d.d.L.selectOneByExampleWithBLOBs [BaseJdbcLogger.java : 159] ==> Parameters: 1110016(Integer), false(Boolean)
+2020-01-01 14:13:48,777 DEBUG [pool-4-thread-5] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 6
+2020-01-01 14:13:48,765 DEBUG [pool-4-thread-3] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 2
+2020-01-01 14:13:48,785 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 10
+2020-01-01 14:13:48,787 DEBUG [pool-4-thread-4] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 6
+2020-01-01 14:13:48,796 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (category_id IN (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) AND is_on_sale = ? AND deleted = ?) 
+2020-01-01 14:13:48,799 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 1008002(Integer), 1008008(Integer), 1008009(Integer), 1008016(Integer), 1010003(Integer), 1011003(Integer), 1011004(Integer), 1015000(Integer), 1017000(Integer), 1036000(Integer), true(Boolean), false(Boolean)
+2020-01-01 14:13:48,802 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 14:13:48,804 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , brief , pic_url , is_hot , is_new , counter_price , retail_price from litemall_goods WHERE ( category_id in ( ? , ? , ? , ? , ? , ? , ? , ? , ? , ? ) and is_on_sale = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-01-01 14:13:48,807 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: 1008002(Integer), 1008008(Integer), 1008009(Integer), 1008016(Integer), 1010003(Integer), 1011003(Integer), 1011004(Integer), 1015000(Integer), 1017000(Integer), 1036000(Integer), true(Boolean), false(Boolean), 4(Integer)
+2020-01-01 14:13:48,818 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 4
+2020-01-01 14:13:48,818 DEBUG [pool-4-thread-8] o.l.l.d.d.L.selectOneByExampleWithBLOBs [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 14:13:48,822 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( pid = ? and deleted = ? ) 
+2020-01-01 14:13:48,823 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1005001(Integer), false(Boolean)
+2020-01-01 14:13:48,832 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 9
+2020-01-01 14:13:48,839 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (category_id IN (?, ?, ?, ?, ?, ?, ?, ?, ?) AND is_on_sale = ? AND deleted = ?) 
+2020-01-01 14:13:48,840 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 1005007(Integer), 1005008(Integer), 1005009(Integer), 1007000(Integer), 1008011(Integer), 1008012(Integer), 1008013(Integer), 1013005(Integer), 1023000(Integer), true(Boolean), false(Boolean)
+2020-01-01 14:13:48,843 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 14:13:48,846 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , brief , pic_url , is_hot , is_new , counter_price , retail_price from litemall_goods WHERE ( category_id in ( ? , ? , ? , ? , ? , ? , ? , ? , ? ) and is_on_sale = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-01-01 14:13:48,849 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: 1005007(Integer), 1005008(Integer), 1005009(Integer), 1007000(Integer), 1008011(Integer), 1008012(Integer), 1008013(Integer), 1013005(Integer), 1023000(Integer), true(Boolean), false(Boolean), 4(Integer)
+2020-01-01 14:13:48,853 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 4
+2020-01-01 14:13:48,855 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( pid = ? and deleted = ? ) 
+2020-01-01 14:13:48,856 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1005002(Integer), false(Boolean)
+2020-01-01 14:13:48,863 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 10
+2020-01-01 14:13:48,869 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (category_id IN (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) AND is_on_sale = ? AND deleted = ?) 
+2020-01-01 14:13:48,870 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 1005010(Integer), 1005011(Integer), 1005012(Integer), 1005013(Integer), 1008014(Integer), 1008015(Integer), 1027000(Integer), 1027001(Integer), 1035003(Integer), 1036003(Integer), true(Boolean), false(Boolean)
+2020-01-01 14:13:48,872 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 14:13:48,874 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , brief , pic_url , is_hot , is_new , counter_price , retail_price from litemall_goods WHERE ( category_id in ( ? , ? , ? , ? , ? , ? , ? , ? , ? , ? ) and is_on_sale = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-01-01 14:13:48,875 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: 1005010(Integer), 1005011(Integer), 1005012(Integer), 1005013(Integer), 1008014(Integer), 1008015(Integer), 1027000(Integer), 1027001(Integer), 1035003(Integer), 1036003(Integer), true(Boolean), false(Boolean), 4(Integer)
+2020-01-01 14:13:48,879 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 4
+2020-01-01 14:13:48,882 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==>  Preparing: select id, `name`, keywords, `desc`, pid, icon_url, pic_url, `level`, sort_order, add_time, update_time, deleted from litemall_category WHERE ( pid = ? and deleted = ? ) 
+2020-01-01 14:13:48,883 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] ==> Parameters: 1008000(Integer), false(Boolean)
+2020-01-01 14:13:48,889 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExample [BaseJdbcLogger.java : 159] <==      Total: 9
+2020-01-01 14:13:48,895 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==>  Preparing: SELECT count(0) FROM litemall_goods WHERE (category_id IN (?, ?, ?, ?, ?, ?, ?, ?, ?) AND is_on_sale = ? AND deleted = ?) 
+2020-01-01 14:13:48,896 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] ==> Parameters: 1008003(Integer), 1008007(Integer), 1008010(Integer), 1008018(Integer), 1010004(Integer), 1012001(Integer), 1013000(Integer), 1020008(Integer), 1022000(Integer), true(Boolean), false(Boolean)
+2020-01-01 14:13:48,898 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective_COUNT [BaseJdbcLogger.java : 159] <==      Total: 1
+2020-01-01 14:13:48,900 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==>  Preparing: select id , `name` , brief , pic_url , is_hot , is_new , counter_price , retail_price from litemall_goods WHERE ( category_id in ( ? , ? , ? , ? , ? , ? , ? , ? , ? ) and is_on_sale = ? and deleted = ? ) order by add_time desc LIMIT ? 
+2020-01-01 14:13:48,901 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] ==> Parameters: 1008003(Integer), 1008007(Integer), 1008010(Integer), 1008018(Integer), 1010004(Integer), 1012001(Integer), 1013000(Integer), 1020008(Integer), 1022000(Integer), true(Boolean), false(Boolean), 4(Integer)
+2020-01-01 14:13:48,904 DEBUG [pool-4-thread-9] o.l.l.d.d.L.selectByExampleSelective [BaseJdbcLogger.java : 159] <==      Total: 4
