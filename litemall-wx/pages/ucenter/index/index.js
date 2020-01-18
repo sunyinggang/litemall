@@ -95,54 +95,10 @@ Page({
       });
     };
   },
-  goCoupon() {
-    if (this.data.hasLogin) {
-      wx.navigateTo({
-        url: "/pages/ucenter/couponList/couponList"
-      });
-    } else {
-      wx.navigateTo({
-        url: "/pages/auth/login/login"
-      });
-    };
-  },
-  goGroupon() {
-    if (this.data.hasLogin) {
-      wx.navigateTo({
-        url: "/pages/groupon/myGroupon/myGroupon"
-      });
-    } else {
-      wx.navigateTo({
-        url: "/pages/auth/login/login"
-      });
-    };
-  },
   goCollect() {
     if (this.data.hasLogin) {
       wx.navigateTo({
         url: "/pages/ucenter/collect/collect"
-      });
-    } else {
-      wx.navigateTo({
-        url: "/pages/auth/login/login"
-      });
-    };
-  },
-  goFeedback(e) {
-    if (this.data.hasLogin) {
-      wx.navigateTo({
-        url: "/pages/ucenter/feedback/feedback"
-      });
-    } else {
-      wx.navigateTo({
-        url: "/pages/auth/login/login"
-      });
-    };
-  },
-  goFootprint() {
-    if (this.data.hasLogin) {
-      wx.navigateTo({
-        url: "/pages/ucenter/footprint/footprint"
       });
     } else {
       wx.navigateTo({
@@ -161,51 +117,11 @@ Page({
       });
     };
   },
-  bindPhoneNumber: function(e) {
-    if (e.detail.errMsg !== "getPhoneNumber:ok") {
-      // 拒绝授权
-      return;
-    }
-
-    if (!this.data.hasLogin) {
-      wx.showToast({
-        title: '绑定失败：请先登录',
-        icon: 'none',
-        duration: 2000
-      });
-      return;
-    }
-
-    util.request(api.AuthBindPhone, {
-      iv: e.detail.iv,
-      encryptedData: e.detail.encryptedData
-    }, 'POST').then(function(res) {
-      if (res.errno === 0) {
-        wx.showToast({
-          title: '绑定手机号码成功',
-          icon: 'success',
-          duration: 2000
-        });
-      }
-    });
-  },
-  goAfterSale: function() {
-    wx.showToast({
-      title: '目前不支持',
-      icon: 'none',
-      duration: 2000
-    });
-  },
   aboutUs: function() {
     wx.navigateTo({
       url: '/pages/about/about'
     });
   },
-  goHelp: function () {
-    wx.navigateTo({
-      url: '/pages/help/help'
-    });
-  },  
   exitLogin: function() {
     wx.showModal({
       title: '',

@@ -19,10 +19,6 @@
           <image class='sharebtn_image' src='/static/images/wechat.png'></image>
           <view class='sharebtn_text'>分享给好友</view>
         </button>
-        <button  class="savesharebtn" open-type="openSetting" bindopensetting="handleSetting" wx:if="{{(!isGroupon) && (!canWrite)}}" >
-          <image class='sharebtn_image' src='/static/images/friend.png'></image>
-          <view class='sharebtn_text'>发朋友圈</view>
-        </button>
         <button class="savesharebtn" bindtap="saveShare" wx:if="{{!isGroupon && canWrite}}">
           <image class='sharebtn_image' src='/static/images/friend.png'></image>
           <view class='sharebtn_text'>发朋友圈</view>
@@ -75,6 +71,10 @@
         <view class="imgs" wx:if="{{item.picList.length > 0}}">
           <image class="img" wx:for="{{item.picList}}" wx:key="*this" wx:for-item="iitem" src="{{iitem}} "></image>
         </view>
+         <view class="customer-service" wx:if="{{item.adminContent.length > 0}}">
+        <text class="u">商家回复：</text>
+        <text class="c">{{item.adminContent}}</text>
+      </view>
       </view>
     </view>
   </view>
@@ -93,23 +93,6 @@
     <template is="wxParse" data="{{wxParseData:goodsDetail.nodes}}" />
   </view>
 
-  <view class="common-problem">
-    <view class="h">
-      <view class="line"></view>
-      <text class="title">常见问题</text>
-    </view>
-    <view class="b">
-      <view class="item" wx:for="{{issueList}}" wx:key="id">
-        <view class="question-box">
-          <text class="spot"></text>
-          <text class="question">{{item.question}}</text>
-        </view>
-        <view class="answer">
-          {{item.answer}}
-        </view>
-      </view>
-    </view>
-  </view>
 
   <!-- 大家都在看 -->
   <view class="related-goods" wx:if="{{relatedGoods.length > 0}}">

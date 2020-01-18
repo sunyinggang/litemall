@@ -8,7 +8,6 @@ Page({
     searchStatus: false,
     goodsList: [],
     helpKeyword: [],
-    historyKeyword: [],
     categoryFilter: false,
     currentSort: 'name',
     currentSortType: 'default',
@@ -31,22 +30,10 @@ Page({
     });
   },
   onLoad: function() {
-
-    this.getSearchKeyword();
+    //搜索关键字
+    //this.getSearchKeyword();
   },
 
-  getSearchKeyword() {
-    let that = this;
-    util.request(api.SearchIndex).then(function(res) {
-      if (res.errno === 0) {
-        that.setData({
-          historyKeyword: res.data.historyKeywordList,
-          defaultKeyword: res.data.defaultKeyword,
-          hotKeyword: res.data.hotKeywordList
-        });
-      }
-    });
-  },
 
   inputChange: function(e) {
     this.setData({
@@ -58,6 +45,7 @@ Page({
       this.getHelpKeyword();
     }
   },
+  //搜索
   getHelpKeyword: function() {
     let that = this;
     util.request(api.SearchHelper, {
@@ -79,16 +67,6 @@ Page({
     if (this.data.keyword) {
       this.getHelpKeyword();
     }
-  },
-  clearHistory: function() {
-    this.setData({
-      historyKeyword: []
-    })
-
-    util.request(api.SearchClearHistory, {}, 'POST')
-      .then(function(res) {
-        console.log('清除成功');
-      });
   },
   getGoodsList: function() {
     let that = this;
@@ -112,11 +90,6 @@ Page({
       //重新获取关键词
       that.getSearchKeyword();
     });
-  },
-  onKeywordTap: function(event) {
-
-    this.getSearchResult(event.target.dataset.keyword);
-
   },
   getSearchResult(keyword) {
     if (keyword === '') {
